@@ -26,21 +26,25 @@ public class NPC : MonoBehaviour
     {
         if(Vector3.Distance(transform.position, player.transform.position) <= 4 && Input.GetKeyDown(KeyCode.Space))
         {
-            if(i == 0) //CUANDO LA CONVERSACIÓN EMPIECE, LANZARÁ LA PRIMERA FRASE
+            if (!PauseButtonsController.paused)
             {
-                activarDialogo();
-            }
+                if (i == 0) //CUANDO LA CONVERSACIÓN EMPIECE, LANZARÁ LA PRIMERA FRASE
+                {
+                    activarDialogo();
+                }
 
-            else if (i == controller.dialogosDePersonajes[personaje].Length) //CUANDO SE HAYAN MOSTRADO TODAS LAS FRASES, SALDRÁ DE LA CONVERSACIÓN
-            {
-                desactivarDialogo();
-            }
+                else if (i == controller.dialogosDePersonajes[personaje].Length) //CUANDO SE HAYAN MOSTRADO TODAS LAS FRASES, SALDRÁ DE LA CONVERSACIÓN
+                {
+                    desactivarDialogo();
+                }
 
-            else //MIENTRAS QUEDEN FRASES, PASARÁ A LA SIGUIENTE AL PULSAR ESPACIO
-            {
-                texto.text = controller.dialogosDePersonajes[personaje][i];
-                i++;
-            }       
+                else //MIENTRAS QUEDEN FRASES, PASARÁ A LA SIGUIENTE AL PULSAR ESPACIO
+                {
+                    texto.text = controller.dialogosDePersonajes[personaje][i];
+                    i++;
+                }
+            }
+                  
         }
     }
 

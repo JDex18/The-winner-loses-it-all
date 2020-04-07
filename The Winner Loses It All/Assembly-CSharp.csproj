@@ -65,36 +65,38 @@
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\Dialogos.cs" />
+    <Compile Include="Assets\Scripts\Managers\ButtonsController.cs" />
+    <Compile Include="Assets\Scripts\Managers\PauseButtonsController.cs" />
+    <Compile Include="Assets\Scripts\Managers\Spawner.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\Vehicles.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/jorge/OneDrive/Documentos/TFG/ProyectoTFG/The Winner Loses It All/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/jorge/OneDrive/Documentos/TFG/ProyectoTFG/The Winner Loses It All/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/jorge/OneDrive/Documentos/TFG/ProyectoTFG/The Winner Loses It All/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/jorge/OneDrive/Documentos/TFG/ProyectoTFG/The Winner Loses It All/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/jorge/OneDrive/Documentos/TFG/ProyectoTFG/The Winner Loses It All/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/jorge/OneDrive/Documentos/TFG/ProyectoTFG/The Winner Loses It All/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/jorge/OneDrive/Documentos/TFG/ProyectoTFG/The Winner Loses It All/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/jorge/OneDrive/Documentos/TFG/ProyectoTFG/The Winner Loses It All/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/jorge/OneDrive/Documentos/TFG/ProyectoTFG/The Winner Loses It All/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
