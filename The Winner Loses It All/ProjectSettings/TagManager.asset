@@ -12,6 +12,7 @@ TagManager:
   - TriggerDestroy
   - Car
   - TriggerStop
+  - Obstacle
   layers:
   - Default
   - TransparentFX
