@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 130708830}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: LimitCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,8 +153,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130708828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.19, y: 34.14, z: -16}
-  m_LocalScale: {x: 56.657, y: 1, z: 1}
+  m_LocalPosition: {x: -10.19, y: 34.14, z: -15.3}
+  m_LocalScale: {x: 56.657, y: 1, z: 2.9497762}
   m_Children: []
   m_Father: {fileID: 375369964}
   m_RootOrder: 0
@@ -167,7 +167,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130708828}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -346,7 +346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207115070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 200.67, y: 1.21, z: -424.62}
+  m_LocalPosition: {x: 202.97, y: 1.21, z: -424.62}
   m_LocalScale: {x: 1, y: 1, z: 3.0095558}
   m_Children: []
   m_Father: {fileID: 252978016}
@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 348516302}
   m_Layer: 0
   m_Name: Collider (2)
-  m_TagString: Untagged
+  m_TagString: LimitCollider3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -470,8 +470,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348516300}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -36, y: 34.14, z: 77.1}
-  m_LocalScale: {x: 191.96526, y: 1, z: 1}
+  m_LocalPosition: {x: -35.6, y: 34.14, z: 77.1}
+  m_LocalScale: {x: 191.96526, y: 1, z: 4.4229}
   m_Children: []
   m_Father: {fileID: 375369964}
   m_RootOrder: 2
@@ -484,7 +484,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348516300}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1252,7 +1252,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200334565}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1522,7 +1522,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701982743}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 200.7, y: 1.27, z: -413.2}
+  m_LocalPosition: {x: 203, y: 1.27, z: -413.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 705004021}
@@ -1543,7 +1543,7 @@ PrefabInstance:
     - target: {fileID: 8403657914846172107, guid: 0e222aeca6fca6847a45e375e6fd1613,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 98.179245
+      value: 100.47925
       objectReference: {fileID: 0}
     - target: {fileID: 8403657914846172107, guid: 0e222aeca6fca6847a45e375e6fd1613,
         type: 3}
@@ -1617,7 +1617,7 @@ PrefabInstance:
     - target: {fileID: 2853948153826108936, guid: ce1914b1e0613d54aa35da5962374b95,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.3
+      value: 45.600002
       objectReference: {fileID: 0}
     - target: {fileID: 2853948153826108936, guid: ce1914b1e0613d54aa35da5962374b95,
         type: 3}
@@ -1685,7 +1685,7 @@ GameObject:
   - component: {fileID: 1962771703}
   m_Layer: 0
   m_Name: Collider (1)
-  m_TagString: Untagged
+  m_TagString: LimitCollider2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1698,8 +1698,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962771701}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 13.3, y: 34.14, z: 77.1}
-  m_LocalScale: {x: 191.96526, y: 1, z: 1}
+  m_LocalPosition: {x: 14.9, y: 34.14, z: 77.1}
+  m_LocalScale: {x: 191.96526, y: 1, z: 2.9256084}
   m_Children: []
   m_Father: {fileID: 375369964}
   m_RootOrder: 1
@@ -1712,7 +1712,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962771701}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}

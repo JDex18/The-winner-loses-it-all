@@ -13,6 +13,13 @@ public class PlayerMovement2 : MonoBehaviour
     private Animator anim;
     private Vector3 startPosition;
 
+    private bool fail;
+    Coroutine coroutine;
+
+    private bool limit1;
+    private bool limit2;
+    private bool limit3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +28,11 @@ public class PlayerMovement2 : MonoBehaviour
         anim = GetComponent<Animator>();
 
         startPosition = transform.position;
+        fail = false;
+
+        limit1 = false;
+        limit2 = false;
+        limit3 = false;
     }
 
     // Update is called once per frame
@@ -31,11 +43,24 @@ public class PlayerMovement2 : MonoBehaviour
             return;
         }
 
+        if (fail)
+        {
+            fail = false;
+            StopCoroutine(coroutine);
+            anim.SetBool("isJumping", false);
+            transform.position = startPosition;
+        }
+
         horizontalMove = Input.GetAxis("Horizontal");
         verticalMove = Input.GetAxis("Vertical");
 
         if(Mathf.Abs(verticalMove) > 0)
         {
+            if(verticalMove < 0 && limit1)
+            {
+                return;
+            }
+
             if(verticalMove > 0)
             {
                 transform.rotation = Quaternion.identity;
@@ -46,13 +71,23 @@ public class PlayerMovement2 : MonoBehaviour
                 transform.rotation = Quaternion.Euler(new Vector3(0, Mathf.Sign(verticalMove) * 180, 0));
             }
 
-            StartCoroutine(Move(new Vector3(0, 0, Mathf.Sign(verticalMove) * 4)));
+            coroutine = StartCoroutine(Move(new Vector3(0, 0, Mathf.Sign(verticalMove) * 4)));
         }
 
         else if (Mathf.Abs(horizontalMove) > 0)
         {
+            if(horizontalMove > 0 && limit2)
+            {
+                return;
+            }
+
+            if (horizontalMove < 0 && limit3)
+            {
+                return;
+            }
+
             transform.rotation = Quaternion.Euler(new Vector3(0, Mathf.Sign(horizontalMove) * 90, 0));
-            StartCoroutine(Move(new Vector3(Mathf.Sign(horizontalMove) * 4, 0, 0)));
+            coroutine = StartCoroutine(Move(new Vector3(Mathf.Sign(horizontalMove) * 4, 0, 0)));
         }
     }
 
@@ -81,7 +116,45 @@ public class PlayerMovement2 : MonoBehaviour
     {
         if (other.tag == "Obstacle")
         {
-            transform.position = startPosition;
+            //transform.position = startPosition;
+            fail = true;
         }
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "LimitCollider")
+        {
+            limit1 = true;
+        }
+
+        if (other.tag == "LimitCollider2")
+        {
+            limit2 = true;
+        }
+
+        if (other.tag == "LimitCollider3")
+        {
+            limit3 = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "LimitCollider")
+        {
+            limit1 = false;
+        }
+
+        if (other.tag == "LimitCollider2")
+        {
+            limit2 = false;
+        }
+
+        if (other.tag == "LimitCollider3")
+        {
+            limit3 = false;
+        }
+    }
+
 }

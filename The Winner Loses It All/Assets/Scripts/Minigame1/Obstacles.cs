@@ -10,7 +10,7 @@ public class Obstacles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 8f;
+        speed = 5f;
         rigidbody = GetComponent<Rigidbody>();
     }
 
