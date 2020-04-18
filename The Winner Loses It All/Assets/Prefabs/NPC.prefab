@@ -84,7 +84,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812296078341231354}
-  m_LocalRotation: {x: -0.00079414336, y: -0.054757107, z: 0.58764064, w: 0.80726665}
+  m_LocalRotation: {x: -0.0007941434, y: -0.054757107, z: 0.5876407, w: 0.80726665}
   m_LocalPosition: {x: -0.000000002301482, y: 0.011007477, z: -9.3132255e-12}
   m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_Children:
@@ -971,7 +971,7 @@ Animator:
   m_GameObject: {fileID: 5278416507298273424}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 1ed1c165eaf7b1244b21a06872565a9c, type: 3}
-  m_Controller: {fileID: 9100000, guid: 85627a099d4b21b4699989467ed83f4d, type: 2}
+  m_Controller: {fileID: 9100000, guid: c275ce6131cf0c34a8d196417cad4a4e, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1019,6 +1019,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6aa2b48c826ef641be1c3ad9bead715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  panel: {fileID: 0}
+  controller: {fileID: 0}
+  texto: {fileID: 0}
+  personaje: 0
 --- !u!1 &5419334000290460230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,7 +1632,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8248729950824096449}
-  m_LocalRotation: {x: 0.061242394, y: -0.002644098, z: -0.0035834697, w: 0.998113}
+  m_LocalRotation: {x: 0.061242398, y: -0.002644098, z: -0.00358347, w: 0.998113}
   m_LocalPosition: {x: -2.220446e-18, y: 0.010756425, z: -1.8626451e-11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

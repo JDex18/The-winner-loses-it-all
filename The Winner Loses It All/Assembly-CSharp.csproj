@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Minigame1\Obstacles.cs" />
     <Compile Include="Assets\Scripts\Minigame1\PlayerMovement2.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Spawner2.cs" />
+    <Compile Include="Assets\Scripts\Minigame1\Target.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Vehicles.cs" />

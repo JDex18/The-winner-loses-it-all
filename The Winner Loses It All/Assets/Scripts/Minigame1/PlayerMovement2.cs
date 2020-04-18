@@ -12,6 +12,7 @@ public class PlayerMovement2 : MonoBehaviour
 
     private Animator anim;
     private Vector3 startPosition;
+    private Quaternion startRotation;
 
     private bool fail;
     Coroutine coroutine;
@@ -19,6 +20,7 @@ public class PlayerMovement2 : MonoBehaviour
     private bool limit1;
     private bool limit2;
     private bool limit3;
+    private bool limit4;
 
     // Start is called before the first frame update
     void Start()
@@ -28,11 +30,13 @@ public class PlayerMovement2 : MonoBehaviour
         anim = GetComponent<Animator>();
 
         startPosition = transform.position;
+        startRotation = transform.rotation;
         fail = false;
 
         limit1 = false;
         limit2 = false;
         limit3 = false;
+        limit4 = false;
     }
 
     // Update is called once per frame
@@ -49,6 +53,7 @@ public class PlayerMovement2 : MonoBehaviour
             StopCoroutine(coroutine);
             anim.SetBool("isJumping", false);
             transform.position = startPosition;
+            transform.rotation = startRotation;
         }
 
         horizontalMove = Input.GetAxis("Horizontal");
@@ -61,7 +66,12 @@ public class PlayerMovement2 : MonoBehaviour
                 return;
             }
 
-            if(verticalMove > 0)
+            if (verticalMove > 0 && limit4)
+            {
+                return;
+            }
+
+            if (verticalMove > 0)
             {
                 transform.rotation = Quaternion.identity;
             }
@@ -137,6 +147,17 @@ public class PlayerMovement2 : MonoBehaviour
         {
             limit3 = true;
         }
+
+        if (other.tag == "LimitCollider4")
+        {
+            limit4 = true;
+        }
+
+        if (other.tag == "Finish")
+        {
+            transform.position = startPosition;
+            //other.gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -154,6 +175,11 @@ public class PlayerMovement2 : MonoBehaviour
         if (other.tag == "LimitCollider3")
         {
             limit3 = false;
+        }
+
+        if (other.tag == "LimitCollider4")
+        {
+            limit4 = false;
         }
     }
 

@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Obstacles : MonoBehaviour
 {
-    private float speed;
+    public float speed;
     private Rigidbody rigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
-        speed = 5f;
         rigidbody = GetComponent<Rigidbody>();
     }
 
