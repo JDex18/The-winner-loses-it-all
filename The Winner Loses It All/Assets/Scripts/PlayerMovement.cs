@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -114,6 +115,11 @@ public class PlayerMovement : MonoBehaviour
         if (other.tag == "TriggerCoches")
         {
             controller.enPaso = true;
+        }
+
+        if (other.tag == "Finish")
+        {
+            SceneManager.LoadScene("FirstMinigame");
         }
     }
 

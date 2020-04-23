@@ -69,8 +69,10 @@
     <Compile Include="Assets\Scripts\Managers\PauseButtonsController.cs" />
     <Compile Include="Assets\Scripts\Managers\Spawner.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Camera2.cs" />
+    <Compile Include="Assets\Scripts\Minigame1\CanvasController.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Obstacles.cs" />
     <Compile Include="Assets\Scripts\Minigame1\PlayerMovement2.cs" />
+    <Compile Include="Assets\Scripts\Minigame1\PlayerMovement22.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Spawner2.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Target.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />

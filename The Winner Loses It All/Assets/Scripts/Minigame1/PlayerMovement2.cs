@@ -54,6 +54,7 @@ public class PlayerMovement2 : MonoBehaviour
             anim.SetBool("isJumping", false);
             transform.position = startPosition;
             transform.rotation = startRotation;
+            isCoolingDown = false;
         }
 
         horizontalMove = Input.GetAxis("Horizontal");

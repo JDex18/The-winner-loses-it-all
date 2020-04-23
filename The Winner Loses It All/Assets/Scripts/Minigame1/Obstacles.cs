@@ -6,17 +6,37 @@ public class Obstacles : MonoBehaviour
 {
     public float speed;
     private Rigidbody rigidbody;
+    public bool right;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+
+        if(transform.position.x < 172)
+        {
+            right = true;
+        }
+
+        else
+        {
+            right = false;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        rigidbody.velocity = transform.forward * speed;
+        if (right)
+        {
+            rigidbody.velocity = new Vector3(1f, 0, 0) * speed;
+        }
+
+        else
+        {
+            rigidbody.velocity = new Vector3(-1f, 0, 0) * speed;
+        }
+        //rigidbody.velocity = transform.forward * speed;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,4 +46,5 @@ public class Obstacles : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     public GameObject character;
+    public GameObject finishCollider;
     private float timer;
     private bool reached;
     // Start is called before the first frame update
@@ -34,6 +35,7 @@ public class Target : MonoBehaviour
         if (other.tag == "Player")
         {
             character.SetActive(true);
+            finishCollider.SetActive(true);
             reached = true;
         }
     }

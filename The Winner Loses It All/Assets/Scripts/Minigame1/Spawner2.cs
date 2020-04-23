@@ -10,7 +10,7 @@ public class Spawner2 : MonoBehaviour
     private float spawnDelayPlattforms;
     private float nextTimeToSpawnPlattforms;
 
-    public GameObject obstacle;
+    public GameObject[] obstacle;
     public GameObject[] plattforms;
     public Transform[] spawnPoints;
     public Transform[] spawnPoints2;
@@ -45,13 +45,13 @@ public class Spawner2 : MonoBehaviour
     void spawnObstacle()
     {
         Transform spawnPoint = spawnPoints[Random.Range(0, 2)];
-        Instantiate(obstacle, spawnPoint.position, spawnPoint.rotation);
+        GameObject instance1 = Instantiate(obstacle[Random.Range(0, obstacle.Length)], spawnPoint.position, spawnPoint.rotation);
 
         spawnPoint = spawnPoints[Random.Range(2, 4)];
-        Instantiate(obstacle, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(obstacle[Random.Range(0, obstacle.Length)], spawnPoint.position, spawnPoint.rotation);
 
         spawnPoint = spawnPoints[Random.Range(4, spawnPoints.Length)];
-        Instantiate(obstacle, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(obstacle[Random.Range(0, obstacle.Length)], spawnPoint.position, spawnPoint.rotation);
     }
 
     void spawnPlattform()
