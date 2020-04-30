@@ -71,11 +71,14 @@
     <Compile Include="Assets\Scripts\Managers\Spawner.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Camera2.cs" />
     <Compile Include="Assets\Scripts\Minigame1\CanvasController.cs" />
+    <Compile Include="Assets\Scripts\Minigame1\Minigame1Manager.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Obstacles.cs" />
     <Compile Include="Assets\Scripts\Minigame1\PlayerMovement2.cs" />
     <Compile Include="Assets\Scripts\Minigame1\PlayerMovement22.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Spawner2.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Target.cs" />
+    <Compile Include="Assets\Scripts\Minigame2\Card.cs" />
+    <Compile Include="Assets\Scripts\Minigame2\CreateCards.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Vehicles.cs" />

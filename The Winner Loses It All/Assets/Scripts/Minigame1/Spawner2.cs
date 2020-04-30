@@ -21,7 +21,7 @@ public class Spawner2 : MonoBehaviour
         spawnDelay = 1.5f;
         nextTimeToSpawn = 0f;
 
-        spawnDelayPlattforms = 1.5f;
+        spawnDelayPlattforms = 2f;
         nextTimeToSpawnPlattforms = 0f;
     }
 

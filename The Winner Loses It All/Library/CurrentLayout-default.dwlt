@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 713, y: 494}
-  m_MaxSize: {x: 18008, y: 14044}
+  m_MinSize: {x: 711, y: 494}
+  m_MaxSize: {x: 18006, y: 14044}
   vertical: 0
-  controlID: 20135
+  controlID: 3956
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 654
     height: 635
-  m_MinSize: {x: 202, y: 422}
-  m_MaxSize: {x: 4002, y: 8022}
+  m_MinSize: {x: 202, y: 444}
+  m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 20107
+  controlID: 3957
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,7 +196,7 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 18}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 494}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
-  controlID: 20136
+  controlID: 3917
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -417,9 +417,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.4530296, y: -12.27453, z: -14.064581}
+    m_Target: {x: 0.93511045, y: -0.017735004, z: 1.084444}
     speed: 2
-    m_Value: {x: -7.4530296, y: -12.27453, z: -14.064581}
+    m_Value: {x: 0.93511045, y: -0.017735004, z: 1.084444}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -448,13 +448,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.39796728, y: -0.5281199, z: 0.30689526, w: 0.6846212}
+    m_Target: {x: 0.19331455, y: 0.5216083, z: -0.122713156, w: 0.8220053}
     speed: 2
-    m_Value: {x: -0.39796728, y: 0.5281199, z: -0.30689526, w: -0.6846212}
+    m_Value: {x: 0.19331457, y: 0.5216083, z: -0.122713156, w: 0.8220053}
   m_Size:
-    m_Target: 32.152714
+    m_Target: 46.249043
     speed: 2
-    m_Value: 33.667763
+    m_Value: 46.249043
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -683,7 +683,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -51990
+  m_LastSelectedObjectID: -5126
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -707,7 +707,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 436
-    width: 728
+    width: 654
     height: 253
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &19
@@ -739,9 +739,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0065ffff
-      m_LastClickedID: -39680
-      m_ExpandedIDs: 7c47ffff764fffffdc90ffffa691ffffc096ffffa89affffcc9fffffbca2ffff20b3fffff4ccffff38cdffff4adfffff6efbfffffc410000244200006a5f0000b45f000022600000b08e0000
+      m_SelectedIDs: 403d0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 4ad0ffffd6e4ffff86f2ffff0cf9ffff6efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -804,21 +804,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/House Assets/Furniture
+    - Assets/Prefabs/Minigame2
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/House Assets/Furniture
+  - Assets/Prefabs/Minigame2
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jorge\OneDrive\Documentos\GitHub\The-winner-loses-it-all\The
     Winner Loses It All
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 76}
-    m_SelectedIDs: 8c3f0000
-    m_LastClickedID: 16268
-    m_ExpandedIDs: 00000000fe2d0000b02f000088320000963300001c360000543a0000b03a0000fe3c00008c3f0000ca440000cc440000ce440000d0440000d2440000d4440000d644000000ca9a3b
+    scrollPos: {x: 0, y: 168}
+    m_SelectedIDs: 28340000
+    m_LastClickedID: 13352
+    m_ExpandedIDs: 00000000062e0000ba2f000098320000a833000036360000703a0000ce3a0000b03f000060420000624200006442000066420000684200006a4200006c42000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -846,7 +846,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fe2d0000b02f000088320000963300001c360000543a0000b03a0000fe3c00008c3f0000ca440000cc440000ce440000d0440000d2440000d4440000d644000000ca9a3b
+    m_ExpandedIDs: 00000000062e0000ba2f000098320000a833000036360000703a0000ce3a0000b03f000060420000624200006442000066420000684200006a4200006c42000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -890,7 +890,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 12}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -898,7 +898,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 1020}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 163
@@ -939,4 +939,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 100
