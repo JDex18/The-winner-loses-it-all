@@ -29,7 +29,6 @@ public class CreateCards : MonoBehaviour
 
     public void create()
     {
-        int count = 0;
         for(int i = 0; i < width; i++)
         {
             for(int x = 0; x < width; x++)
@@ -38,8 +37,6 @@ public class CreateCards : MonoBehaviour
                 cards.Add(card);
                 card.GetComponent<Card>().assignTexture(textures[0]);
                 card.GetComponent<Card>().startPosition = new Vector3(x, 0, i);
-                card.GetComponent<Card>().numCard = count;
-                count++;
             }
 
         }
@@ -54,6 +51,7 @@ public class CreateCards : MonoBehaviour
         for(int i = 0; i < cards.Count; i++)
         {
             cards[i].GetComponent<Card>().assignTexture(textures[i / 2]);
+            cards[i].GetComponent<Card>().numCard = i / 2;
         }
     }
 
@@ -100,6 +98,6 @@ public class CreateCards : MonoBehaviour
 
     private bool checkCards(GameObject card1, GameObject card2)
     {
-        return card1.GetComponent<MeshRenderer>().material.mainTexture == card2.GetComponent<MeshRenderer>().material.mainTexture;
+        return card1.GetComponent<Card>().numCard == card2.GetComponent<Card>().numCard;
     }
 }

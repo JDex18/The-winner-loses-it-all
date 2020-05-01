@@ -11,16 +11,20 @@ public class Card : MonoBehaviour
     public CreateCards createCards;
 
     private float timeDelay;
+    private bool showing;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         timeDelay = 1f;
+        showing = false;
     }
 
     private void Awake()
     {
         createCards = GameObject.Find("GameManager").GetComponent<CreateCards>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -37,23 +41,45 @@ public class Card : MonoBehaviour
 
     public void showCard()
     {
-        if (createCards.canShow)
+        if (createCards.canShow && !showing)
         {
-            GetComponent<MeshRenderer>().material.mainTexture = assignedTexture;
+            //GetComponent<MeshRenderer>().material.mainTexture = assignedTexture;
+            anim.SetBool("isShowing", true);
+            Invoke("idle", 0.3f);
             createCards.click(this);
+            showing = true;
         }
+    }
+
+    public void show()
+    {
+        GetComponent<MeshRenderer>().material.mainTexture = assignedTexture;
     }
 
     public void hideCard()
     {
         createCards.canShow = false;
-        Invoke("hide", timeDelay);
+        //Invoke("hide", timeDelay);
+        Invoke("hideAnimation", timeDelay);
     }
 
-    private void hide()
+    private void hideAnimation()
+    {
+        anim.SetBool("isHiding", true);
+        Invoke("idle", 0.3f);
+    }
+
+    public void hide()
     {
         GetComponent<MeshRenderer>().material = hideCardMaterial;
         createCards.canShow = true;
+        showing = false;
+    }
+
+    private void idle()
+    {
+        anim.SetBool("isHiding", false);
+        anim.SetBool("isShowing", false);
     }
 
     private void OnMouseDown()
