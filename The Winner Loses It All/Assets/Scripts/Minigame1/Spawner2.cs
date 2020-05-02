@@ -15,13 +15,15 @@ public class Spawner2 : MonoBehaviour
     public Transform[] spawnPoints;
     public Transform[] spawnPoints2;
 
+    public Texture2D[] textures;
+
     // Start is called before the first frame update
     void Start()
     {
         spawnDelay = 1.5f;
         nextTimeToSpawn = 0f;
 
-        spawnDelayPlattforms = 2f;
+        spawnDelayPlattforms = 3f;
         nextTimeToSpawnPlattforms = 0f;
     }
 
@@ -57,9 +59,11 @@ public class Spawner2 : MonoBehaviour
     void spawnPlattform()
     {
         Transform spawnPoint = spawnPoints2[Random.Range(0, 2)];
-        Instantiate(plattforms[Random.Range(0, plattforms.Length)], spawnPoint.position, spawnPoint.rotation);
+        GameObject plattform1 = Instantiate(plattforms[Random.Range(0, plattforms.Length)], spawnPoint.position, spawnPoint.rotation);
+        plattform1.GetComponent<MeshRenderer>().material.mainTexture = textures[Random.Range(0, textures.Length)];
 
         spawnPoint = spawnPoints2[Random.Range(2, spawnPoints2.Length)];
-        Instantiate(plattforms[Random.Range(0, plattforms.Length)], spawnPoint.position, spawnPoint.rotation);
+        GameObject plattform2 = Instantiate(plattforms[Random.Range(0, plattforms.Length)], spawnPoint.position, spawnPoint.rotation);
+        plattform2.GetComponent<MeshRenderer>().material.mainTexture = textures[Random.Range(0, textures.Length)];
     }
 }

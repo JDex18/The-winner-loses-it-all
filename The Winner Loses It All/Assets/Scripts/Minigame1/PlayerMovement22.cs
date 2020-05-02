@@ -28,6 +28,9 @@ public class PlayerMovement22 : MonoBehaviour
 
     public static bool play;
 
+    private float timer2;
+    private bool canMove;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +50,9 @@ public class PlayerMovement22 : MonoBehaviour
         timer = 0f;
 
         play = false;
+
+        timer = 0;
+        canMove = true;
     }
 
     // Update is called once per frame
@@ -54,6 +60,15 @@ public class PlayerMovement22 : MonoBehaviour
     {
         if (play)
         {
+            if (!canMove)
+            {
+                timer2 += Time.deltaTime;
+                if(timer2 >= 0.8f)
+                {
+                    timer2 = 0;
+                    canMove = true;
+                }
+            }
             if (fail)
             {
                 fail = false;
@@ -80,7 +95,7 @@ public class PlayerMovement22 : MonoBehaviour
                 }
             }
 
-            else
+            else if(!isCoolingDown && canMove)
             {
                 horizontalMove = Input.GetAxis("Horizontal");
                 verticalMove = Input.GetAxis("Vertical");
@@ -109,6 +124,7 @@ public class PlayerMovement22 : MonoBehaviour
 
                     //coroutine = StartCoroutine(Move(new Vector3(0, 0, Mathf.Sign(verticalMove) * 4)));
                     Move(new Vector3(0, 0, Mathf.Sign(verticalMove) * 4));
+                    canMove = false;
                 }
 
                 else if (Mathf.Abs(horizontalMove) > 0)
@@ -126,6 +142,7 @@ public class PlayerMovement22 : MonoBehaviour
                     transform.rotation = Quaternion.Euler(new Vector3(0, Mathf.Sign(horizontalMove) * 90, 0));
                     //coroutine = StartCoroutine(Move(new Vector3(Mathf.Sign(horizontalMove) * 4, 0, 0)));
                     Move(new Vector3(Mathf.Sign(horizontalMove) * 4, 0, 0));
+                    canMove = false;
                 }
             }
         }

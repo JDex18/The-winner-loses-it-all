@@ -35,7 +35,6 @@ public class CreateCards : MonoBehaviour
             {
                 GameObject card = Instantiate(cardPrefab, new Vector3(x, 0, i), Quaternion.Euler(new Vector3(0, 180, 0)));
                 cards.Add(card);
-                card.GetComponent<Card>().assignTexture(textures[0]);
                 card.GetComponent<Card>().startPosition = new Vector3(x, 0, i);
             }
 
