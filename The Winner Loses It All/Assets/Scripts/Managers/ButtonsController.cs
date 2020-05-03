@@ -27,4 +27,5 @@ public class ButtonsController : MonoBehaviour
     {
         Application.Quit();
     }
+
 }

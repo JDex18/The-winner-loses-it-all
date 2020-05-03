@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementLevel2 : MonoBehaviour
 {
     private float playerSpeed;
     private float horizontalMove;
@@ -20,8 +19,6 @@ public class PlayerMovement : MonoBehaviour
 
     public Controller controller;
     private float gravity;
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -31,8 +28,9 @@ public class PlayerMovement : MonoBehaviour
 
         controller.enConversacion = false;
         gravity = 9.8f;
+
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -93,41 +91,5 @@ public class PlayerMovement : MonoBehaviour
     void SetGravity()
     {
         movePlayer.y = -gravity;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Trigger1")
-        {
-            CameraFollow.cambio1 = true;
-        }
-
-        if (other.tag == "Trigger2")
-        {
-            CameraFollow.cambio2 = true;
-        }
-
-        if (other.tag == "Trigger3")
-        {
-            CameraFollow.cambio3 = true;
-        }
-
-        if (other.tag == "TriggerCoches")
-        {
-            controller.enPaso = true;
-        }
-
-        if (other.tag == "Finish")
-        {
-            SceneManager.LoadScene("FirstMinigame");
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "TriggerCoches")
-        {
-            controller.enPaso = false;
-        }
     }
 }

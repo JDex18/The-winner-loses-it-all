@@ -52,7 +52,10 @@ public class Spawner2 : MonoBehaviour
         spawnPoint = spawnPoints[Random.Range(2, 4)];
         Instantiate(obstacle[Random.Range(0, obstacle.Length)], spawnPoint.position, spawnPoint.rotation);
 
-        spawnPoint = spawnPoints[Random.Range(4, spawnPoints.Length)];
+        spawnPoint = spawnPoints[Random.Range(4, 6)];
+        Instantiate(obstacle[Random.Range(0, obstacle.Length)], spawnPoint.position, spawnPoint.rotation);
+
+        spawnPoint = spawnPoints[Random.Range(6, spawnPoints.Length)];
         Instantiate(obstacle[Random.Range(0, obstacle.Length)], spawnPoint.position, spawnPoint.rotation);
     }
 
