@@ -19,6 +19,8 @@ public class PlayerMovementLevel2 : MonoBehaviour
 
     public Controller controller;
     private float gravity;
+
+    public static bool play;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +36,10 @@ public class PlayerMovementLevel2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        walk();
-
+        if (play)
+        {
+            walk();
+        }
     }
 
     void walk()

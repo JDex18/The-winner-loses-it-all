@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Level1\Level1Canvas.cs" />
     <Compile Include="Assets\Scripts\Level1\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Level2\CameraFollowingSimple.cs" />
+    <Compile Include="Assets\Scripts\Level2\Level2Canvas.cs" />
     <Compile Include="Assets\Scripts\Level2\PlayerMovementLevel2.cs" />
     <Compile Include="Assets\Scripts\Managers\ButtonsController.cs" />
     <Compile Include="Assets\Scripts\Managers\PauseButtonsController.cs" />
@@ -80,9 +81,11 @@
     <Compile Include="Assets\Scripts\Minigame1\PlayerMovement22.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Spawner2.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Target.cs" />
+    <Compile Include="Assets\Scripts\Minigame2\CanvasMinigame3.cs" />
     <Compile Include="Assets\Scripts\Minigame2\Card.cs" />
     <Compile Include="Assets\Scripts\Minigame2\CreateCards.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
+    <Compile Include="Assets\Scripts\NPCTarget.cs" />
     <Compile Include="Assets\Scripts\Vehicles.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -22,6 +22,12 @@ public class CanvasController : MonoBehaviour
     public Image textoCentral;
     public Sprite failImage;
     public Sprite goodImage;
+    public Sprite winImage;
+
+    private bool win;
+    public GameObject endPanel;
+
+    public PauseButtonsController pauseButtonsController;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +37,9 @@ public class CanvasController : MonoBehaviour
 
         fail = false;
         good = false;
+
+        win = false;
+        endPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -48,11 +57,16 @@ public class CanvasController : MonoBehaviour
                 textoCentral.gameObject.SetActive(false);
                 fail = false;
                 good = false;
+
+                if (win)
+                {
+                    endPanel.SetActive(true);
+                }
             }
             
         }
 
-        if (!PlayerMovement22.play)
+        if (!PlayerMovement22.play && !win)
         {
             if (!start)
             {
@@ -88,6 +102,7 @@ public class CanvasController : MonoBehaviour
                     cuenta.gameObject.SetActive(false);
                     timer = 0;
                     PlayerMovement22.play = true;
+                    pauseButtonsController.activatePauseMenu();
                 }
             }
         }       
@@ -102,7 +117,17 @@ public class CanvasController : MonoBehaviour
 
         if (good)
         {
-            textoCentral.sprite = goodImage;
+            if(Minigame1Manager.targetCount == 4)
+            {
+                textoCentral.sprite = winImage;
+                PlayerMovement22.play = false;
+                win = true;
+            }
+
+            else
+            {
+                textoCentral.sprite = goodImage;
+            }
         }
     }
 }

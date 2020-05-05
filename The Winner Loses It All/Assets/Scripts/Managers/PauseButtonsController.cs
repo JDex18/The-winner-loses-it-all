@@ -7,28 +7,34 @@ public class PauseButtonsController : MonoBehaviour
 {
     public static bool paused;
     public GameObject pauseMenu;
+    public bool canPause;
 
     // Start is called before the first frame update
     void Start()
     {
         paused = false;
+        canPause = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (canPause)
         {
-            if (paused)
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                resume();
-            }
+                if (paused)
+                {
+                    resume();
+                }
 
-            else
-            {
-                pause();
+                else
+                {
+                    pause();
+                }
             }
         }
+        
     }
 
     public void resume()
@@ -48,5 +54,15 @@ public class PauseButtonsController : MonoBehaviour
     public void backToMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void activatePauseMenu()
+    {
+        canPause = true;
+    }
+
+    public void deactivatePauseMenu()
+    {
+        canPause = false;
     }
 }

@@ -17,14 +17,16 @@ public class Card : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeDelay = 1f;
-        showing = false;
+        timeDelay = 3f;
+        showing = true;
     }
 
     private void Awake()
     {
         createCards = GameObject.Find("GameManager").GetComponent<CreateCards>();
         anim = GetComponent<Animator>();
+        Invoke("show", 0.1f);
+        Invoke("hideAnimation", 4f);
     }
 
     // Update is called once per frame
@@ -51,7 +53,7 @@ public class Card : MonoBehaviour
         }
     }
 
-    public void show()
+    public void show()//SE LLAMA DESDE UN EVENTO DE LA ANIMACIÓN
     {
         GetComponent<MeshRenderer>().material.mainTexture = assignedTexture;
     }
@@ -69,7 +71,7 @@ public class Card : MonoBehaviour
         Invoke("idle", 0.3f);
     }
 
-    public void hide()
+    public void hide()//SE LLAMA DESDE UN EVENTO DE LA ANIMACIÓN
     {
         GetComponent<MeshRenderer>().material = hideCardMaterial;
         createCards.canShow = true;

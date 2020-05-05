@@ -17,8 +17,8 @@ public class CreateCards : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        create();//PROVISIONAL. PONLO DESPUÉS DONDE QUIERAS QUE SE EMPIECEN A CREAR LAS CARTAS
-        canShow = true;
+        //create();//PROVISIONAL. PONLO DESPUÉS DONDE QUIERAS QUE SE EMPIECEN A CREAR LAS CARTAS
+        canShow = false;
     }
 
     // Update is called once per frame

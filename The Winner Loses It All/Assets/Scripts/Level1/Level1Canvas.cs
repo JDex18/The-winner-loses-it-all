@@ -22,6 +22,7 @@ public class Level1Canvas : MonoBehaviour
     public GameObject endDialogue;
     public GameObject finalPanel;
     private int i;
+    public PauseButtonsController pauseButtonsController;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +65,7 @@ public class Level1Canvas : MonoBehaviour
                 {
                     instructions.SetActive(false);
                     PlayerMovement.play = true;
+                    pauseButtonsController.activatePauseMenu();
                 }
             }
 
