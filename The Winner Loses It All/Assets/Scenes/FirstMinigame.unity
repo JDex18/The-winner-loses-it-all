@@ -5280,6 +5280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 451d72fb675f2474bbc90b02741f6fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasMinigame: {fileID: 728521186}
 --- !u!54 &928146760
 Rigidbody:
   m_ObjectHideFlags: 0

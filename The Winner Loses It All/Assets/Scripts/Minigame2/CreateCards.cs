@@ -14,6 +14,8 @@ public class CreateCards : MonoBehaviour
     public Card showedCard;
     public bool canShow;
 
+    public CanvasMinigame2 canvasMinigame;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,12 +83,14 @@ public class CreateCards : MonoBehaviour
             if(checkCards(showedCard.gameObject, card.gameObject))
             {
                 Debug.Log("ACIERTO");
+                canvasMinigame.correctCards();
                 canShow = true;
             }
 
             else
             {
                 Debug.Log("FALLO");
+                canvasMinigame.wrongCards();
                 card.hideCard();
                 showedCard.hideCard();
             }

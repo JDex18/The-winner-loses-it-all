@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CanvasController : MonoBehaviour
+public class CanvasMinigame1 : MonoBehaviour
 {
     public Sprite image2;
     public Sprite image1;
@@ -47,8 +47,8 @@ public class CanvasController : MonoBehaviour
     {
         if(fail || good)
         {
-            textoCentral.gameObject.SetActive(true);
-            checkState();
+            /*textoCentral.gameObject.SetActive(true);
+            checkState();*/
             timer += Time.deltaTime;
 
             if(timer >= 2f)
@@ -82,17 +82,17 @@ public class CanvasController : MonoBehaviour
             {
                 timer += Time.deltaTime;
 
-                if (timer >= 1f && timer <= 2f)
+                if (timer >= 1f && timer < 2f)
                 {
                     cuenta.sprite = image2;
                 }
 
-                else if (timer >= 2f && timer <= 3f)
+                else if (timer >= 2f && timer < 3f)
                 {
                     cuenta.sprite = image1;
                 }
 
-                else if (timer >= 3f && timer <= 4f)
+                else if (timer >= 3f && timer < 4f)
                 {
                     cuenta.sprite = imageYa;
                 }
@@ -108,7 +108,7 @@ public class CanvasController : MonoBehaviour
         }       
     }
 
-    private void checkState()
+    /*private void checkState()
     {
         if (fail)
         {
@@ -129,5 +129,29 @@ public class CanvasController : MonoBehaviour
                 textoCentral.sprite = goodImage;
             }
         }
+    }*/
+
+    public void wrong()
+    {
+        textoCentral.sprite = failImage;
+        textoCentral.gameObject.SetActive(true);
+        fail = true;
+    }
+
+    public void correct()
+    {
+        if (Minigame1Manager.targetCount == 4)
+        {
+            textoCentral.sprite = winImage;
+            PlayerMovement22.play = false;
+            win = true;
+        }
+
+        else
+        {
+            textoCentral.sprite = goodImage;
+        }
+        textoCentral.gameObject.SetActive(true);
+        good = true;
     }
 }

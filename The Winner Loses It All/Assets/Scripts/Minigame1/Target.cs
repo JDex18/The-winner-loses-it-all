@@ -25,7 +25,6 @@ public class Target : MonoBehaviour
 
             if(timer >= 0.5)
             {
-                Minigame1Manager.targetCount++;
                 Debug.Log(Minigame1Manager.targetCount);
                 gameObject.SetActive(false);               
             }
@@ -34,12 +33,13 @@ public class Target : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !reached)
         {
             character.SetActive(true);
             finishCollider.SetActive(true);
             reached = true;
-            
+            Minigame1Manager.targetCount++;
+
         }
     }
 }

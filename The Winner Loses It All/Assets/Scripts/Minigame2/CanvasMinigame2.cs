@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CanvasMinigame3 : MonoBehaviour
+public class CanvasMinigame2 : MonoBehaviour
 {
     public Sprite image2;
     public Sprite image1;
@@ -20,7 +20,16 @@ public class CanvasMinigame3 : MonoBehaviour
     public CreateCards createCards;
     private bool playing;
 
+    public Image textoCentral;
+    public static bool fail;
+    public static bool good;
+    private bool win;
+    public Sprite failImage;
+    public Sprite goodImage;
+    //public Sprite winImage;
+
     public PauseButtonsController pauseButtonsController;
+    public Minigame2Manager minigameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +45,24 @@ public class CanvasMinigame3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (fail || good)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= 2f)
+            {
+                timer = 0;
+                textoCentral.gameObject.SetActive(false);
+                fail = false;
+                good = false;
+
+                /*if (win)
+                {
+                    endPanel.SetActive(true);
+                }*/
+            }
+        }
+
         if (!start)
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -79,5 +106,20 @@ public class CanvasMinigame3 : MonoBehaviour
     private void canPause()
     {
         pauseButtonsController.activatePauseMenu();
+        minigameManager.startTimer();
+    }
+
+    public void wrongCards()
+    {
+        textoCentral.sprite = failImage;
+        textoCentral.gameObject.SetActive(true);
+        fail = true;
+    }
+
+    public void correctCards()
+    {
+        textoCentral.sprite = goodImage;
+        textoCentral.gameObject.SetActive(true);
+        good = true;
     }
 }

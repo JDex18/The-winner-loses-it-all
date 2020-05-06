@@ -31,6 +31,8 @@ public class PlayerMovement22 : MonoBehaviour
     private float timer2;
     private bool canMove;
 
+    public CanvasMinigame1 canvasMinigame;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -146,6 +148,11 @@ public class PlayerMovement22 : MonoBehaviour
                 }
             }
         }
+
+        else
+        {
+            anim.SetBool("isJumping", false);
+        }
         
 
     }
@@ -186,7 +193,7 @@ public class PlayerMovement22 : MonoBehaviour
         {
             //transform.position = startPosition;
             fail = true;
-            CanvasController.fail = true;
+            canvasMinigame.wrong();
         }
     }
 
@@ -216,14 +223,14 @@ public class PlayerMovement22 : MonoBehaviour
         {
             transform.position = startPosition;
             //other.gameObject.SetActive(false);
-            CanvasController.good = true;
+            canvasMinigame.correct();
         }
 
         if (other.tag == "Obstacle")
         {
             //transform.position = startPosition;
             fail = true;
-            CanvasController.fail = true;
+            canvasMinigame.wrong();
         }
     }
 

@@ -13,7 +13,7 @@ public class Level2Canvas : MonoBehaviour
 
     private float timer;
 
-    string[] dialogue = new string[2];
+    string[] dialogue = new string[5];
     private bool end;
     public GameObject endDialogue;
     public GameObject finalPanel;
@@ -68,8 +68,11 @@ public class Level2Canvas : MonoBehaviour
 
     private void completeDialogue()
     {
-        dialogue[0] = "Toni: Vamos Toni, concentrate";
-        dialogue[1] = "Toni: Solo tienes que pasar por delante, ignorarla e ir a trabajar como si no ocurriera nada y...";
+        dialogue[0] = "Toni: Hola cariño. De que querías que hablasemos?";
+        dialogue[1] = "Mónica: Hoy he pasado por la farmacia cuando volvía del trabajo, y al pasar la tarjeta me la han denegado";
+        dialogue[2] = "Toni: Bueno no pasa nada, habrá sido un error. A ver dejame ver la fecha de...";
+        dialogue[3] = "Mónica: Toni he llamado al banco, y nuestra cuenta conjunta está a cero. Puedes explicarme que está pasando?";
+        dialogue[4] = "Toni: Yo...";
     }
 
     private void endLevel()
