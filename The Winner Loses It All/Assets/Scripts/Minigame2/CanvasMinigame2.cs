@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CanvasMinigame2 : MonoBehaviour
 {
+    public Sprite image3;
     public Sprite image2;
     public Sprite image1;
     public Sprite imageYa;
@@ -23,10 +24,16 @@ public class CanvasMinigame2 : MonoBehaviour
     public Image textoCentral;
     public static bool fail;
     public static bool good;
-    private bool win;
     public Sprite failImage;
     public Sprite goodImage;
-    //public Sprite winImage;
+
+    private bool win;
+    private bool lose;
+    public Sprite winImage;
+    public Sprite loseImage;
+    public Image finalText;
+
+    public GameObject endPanel;
 
     public PauseButtonsController pauseButtonsController;
     public Minigame2Manager minigameManager;
@@ -38,6 +45,12 @@ public class CanvasMinigame2 : MonoBehaviour
         timer = 0f;
         playing = false;
         instructions.SetActive(true);
+        textoCentral.gameObject.SetActive(false);
+
+        win = false;
+        lose = false;
+        finalText.gameObject.SetActive(false);
+        endPanel.SetActive(false);
         //pauseButtonsController.deactivatePauseMenu();
 
     }
@@ -45,6 +58,33 @@ public class CanvasMinigame2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(win || lose)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= 2f)
+            {
+                timer = 0;
+                finalText.gameObject.SetActive(false);
+
+                if (win)
+                {
+                    endPanel.SetActive(true);
+                }
+
+                if (lose)
+                {
+                    lose = false;
+                    start = false;
+                    playing = false;
+                    instructions.SetActive(true);
+                    minigameManager.resetTime();
+                    createCards.resetCards();
+                }
+            }
+
+            return;
+        }
         if (fail || good)
         {
             timer += Time.deltaTime;
@@ -55,11 +95,6 @@ public class CanvasMinigame2 : MonoBehaviour
                 textoCentral.gameObject.SetActive(false);
                 fail = false;
                 good = false;
-
-                /*if (win)
-                {
-                    endPanel.SetActive(true);
-                }*/
             }
         }
 
@@ -69,6 +104,7 @@ public class CanvasMinigame2 : MonoBehaviour
             {
                 start = true;
                 instructions.SetActive(false);
+                cuenta.sprite = image3;
                 cuenta.gameObject.SetActive(true);
             }
         }
@@ -121,5 +157,19 @@ public class CanvasMinigame2 : MonoBehaviour
         textoCentral.sprite = goodImage;
         textoCentral.gameObject.SetActive(true);
         good = true;
+    }
+
+    public void winGame()
+    {
+        win = true;
+        finalText.sprite = winImage;
+        finalText.gameObject.SetActive(true);
+    }
+
+    public void loseGame()
+    {
+        lose = true;
+        finalText.sprite = loseImage;
+        finalText.gameObject.SetActive(true);
     }
 }

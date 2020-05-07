@@ -7,7 +7,8 @@ public class Minigame2Manager : MonoBehaviour
 {
     public Text time;
     private float timer;
-    private bool start;
+    public static bool start;
+    public CanvasMinigame2 canvasMinigame;
 
     // Start is called before the first frame update
     void Start()
@@ -23,10 +24,11 @@ public class Minigame2Manager : MonoBehaviour
         if (start)
         {
             timer += Time.deltaTime;
-            if(timer >= 90f)
+            if(timer >= 60f)
             {
-                timer = 90f;
+                timer = 60f;
                 start = false;
+                canvasMinigame.loseGame();
             }
 
             time.text = CalcularTiempo(60 - (int)timer);
@@ -67,5 +69,10 @@ public class Minigame2Manager : MonoBehaviour
         }
 
         return minutes + ":" + seconds;
+    }
+
+    public void resetTime()
+    {
+        time.gameObject.SetActive(false);
     }
 }

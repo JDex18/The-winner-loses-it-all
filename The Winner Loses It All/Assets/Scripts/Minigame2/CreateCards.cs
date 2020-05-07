@@ -15,12 +15,13 @@ public class CreateCards : MonoBehaviour
     public bool canShow;
 
     public CanvasMinigame2 canvasMinigame;
-
+    private int count;
     // Start is called before the first frame update
     void Start()
     {
         //create();//PROVISIONAL. PONLO DESPUÉS DONDE QUIERAS QUE SE EMPIECEN A CREAR LAS CARTAS
         canShow = false;
+        count = 0;
     }
 
     // Update is called once per frame
@@ -83,8 +84,18 @@ public class CreateCards : MonoBehaviour
             if(checkCards(showedCard.gameObject, card.gameObject))
             {
                 Debug.Log("ACIERTO");
-                canvasMinigame.correctCards();
-                canShow = true;
+                count++;
+                if(count == 8)
+                {
+                    canvasMinigame.winGame();
+                    Minigame2Manager.start = false;
+                }
+
+                else
+                {
+                    canvasMinigame.correctCards();
+                    canShow = true;
+                }
             }
 
             else
@@ -102,5 +113,17 @@ public class CreateCards : MonoBehaviour
     private bool checkCards(GameObject card1, GameObject card2)
     {
         return card1.GetComponent<Card>().numCard == card2.GetComponent<Card>().numCard;
+    }
+
+    public void resetCards()
+    {
+        cards.Clear();
+        GameObject[] cardsToRemove = GameObject.FindGameObjectsWithTag("Card");
+        for(int i = 0; i < cardsToRemove.Length; i++)
+        {
+            Destroy(cardsToRemove[i]);
+        }
+        canShow = false;
+        count = 0;
     }
 }

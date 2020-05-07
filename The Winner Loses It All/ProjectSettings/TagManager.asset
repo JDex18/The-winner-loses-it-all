@@ -17,6 +17,7 @@ TagManager:
   - LimitCollider2
   - LimitCollider3
   - LimitCollider4
+  - Card
   layers:
   - Default
   - TransparentFX
