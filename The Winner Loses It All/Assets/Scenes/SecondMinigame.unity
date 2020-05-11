@@ -456,7 +456,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.24
+  orthographic size: 2.78
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -480,7 +480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652624749}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.4, y: 4.4, z: 1.5}
+  m_LocalPosition: {x: 2.96, y: 4.4, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -526,8 +526,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -282, y: 0}
-  m_SizeDelta: {x: 160, y: 67}
+  m_AnchoredPosition: {x: -346.7, y: 0}
+  m_SizeDelta: {x: 99.54, y: 41.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1114844403
 MonoBehaviour:
@@ -549,7 +549,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 45
+    m_FontSize: 30
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
@@ -767,7 +767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657524449}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1, y: -4.6, z: 0}
+  m_LocalPosition: {x: 3.34, y: -4.6, z: 0}
   m_LocalScale: {x: 1.4290562, y: 1.4290562, z: 1.4290562}
   m_Children: []
   m_Father: {fileID: 0}
@@ -900,8 +900,8 @@ PrefabInstance:
       propertyPath: m_Text
       value: "Toni est\xE1 en un aprieto, y tiene que inventarse algo para que no
         le pillen. Encuentra las parejas antes de que termine el tiempo, o tu barra
-        de recaida subir\xE1 y tendr\xE1s que volver a empezar.\n\nCuando est\xE9s
-        preparado, pulsa espacio."
+        de recaida subir\xE1 y tendr\xE1s que volver a empezar.\n\nSi est\xE1s preparado,
+        presiona Espacio."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4052b333fce7470469a68c216e46e0f9, type: 3}
@@ -937,19 +937,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50098e014f315b946b35853a179af8b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 5039350030859381243, guid: bdb2c65c020c6f94597f6a019d403095,
+  cardPrefab: {fileID: 6703274296335384227, guid: 2207b8a62c5aaa849ba8c01202457736,
     type: 3}
   width: 4
   materials: []
   textures:
-  - {fileID: 2800000, guid: 60244be02d1055e48b2842badaa68839, type: 3}
-  - {fileID: 2800000, guid: 66bcff92077b2a44f88a6fadb4f73ea1, type: 3}
-  - {fileID: 2800000, guid: 78f60236aa202ec4f891fec6a7228661, type: 3}
-  - {fileID: 2800000, guid: e61a01e466ba4924cadcb9ab7f7f7a99, type: 3}
-  - {fileID: 2800000, guid: adf1da23a434ad843a34253c5e5b179c, type: 3}
-  - {fileID: 2800000, guid: aa7bb23966028f1459de77970cde4e4e, type: 3}
-  - {fileID: 2800000, guid: 1c42811a43e006247ab58e85bf634e5b, type: 3}
-  - {fileID: 2800000, guid: ad554b2acc8fe3f46a3c2649c840beb2, type: 3}
+  - {fileID: 2800000, guid: 041cbc7058b40604e8296755df0013ea, type: 3}
+  - {fileID: 2800000, guid: 32bebfd169585bb46a71b6a5d668c050, type: 3}
+  - {fileID: 2800000, guid: 38bfa1627dad98449bd1ed0ce10d102d, type: 3}
+  - {fileID: 2800000, guid: 6b4cd077ecd25a74bacba6da3ff0e753, type: 3}
+  - {fileID: 2800000, guid: b92d3377f5fbfed4283fa396fc97d7e7, type: 3}
+  - {fileID: 2800000, guid: 6b370f9db9b9f85448c26fe481e41864, type: 3}
+  - {fileID: 2800000, guid: 90c730ccbcc94494489dcee51ec44d65, type: 3}
+  - {fileID: 2800000, guid: 34378e29a2ce0b94e9e29e20b5259371, type: 3}
   showedCard: {fileID: 0}
   canShow: 0
   canvasMinigame: {fileID: 1793743065}

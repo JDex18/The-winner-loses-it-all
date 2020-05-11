@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Minigame2Manager : MonoBehaviour
 {
@@ -24,14 +25,14 @@ public class Minigame2Manager : MonoBehaviour
         if (start)
         {
             timer += Time.deltaTime;
-            if(timer >= 60f)
+            if(timer >= 75f)
             {
-                timer = 60f;
+                timer = 75f;
                 start = false;
                 canvasMinigame.loseGame();
             }
 
-            time.text = CalcularTiempo(60 - (int)timer);
+            time.text = CalcularTiempo(75 - (int)timer);
         }
     }
 
@@ -74,5 +75,10 @@ public class Minigame2Manager : MonoBehaviour
     public void resetTime()
     {
         time.gameObject.SetActive(false);
+    }
+
+    public void changeScene()
+    {
+        SceneManager.LoadScene("Level3");
     }
 }

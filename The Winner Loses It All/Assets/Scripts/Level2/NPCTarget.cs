@@ -9,11 +9,13 @@ public class NPCTarget : MonoBehaviour
 
     private Animator anim;
     public Level2Canvas levelCanvas;
+    public GameObject icon;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        icon.SetActive(false);
     }
 
     // Update is called once per frame
@@ -28,11 +30,7 @@ public class NPCTarget : MonoBehaviour
                 player.transform.LookAt(transform);
                 anim.SetBool("isTalking", true);
 
-                foreach (Transform child in transform)
-                {
-                    if (child.tag == "Icono")
-                        child.gameObject.SetActive(false);
-                }
+                icon.SetActive(false);
 
                 levelCanvas.finish();
             }
@@ -44,11 +42,7 @@ public class NPCTarget : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            foreach (Transform child in transform)
-            {
-                if (child.tag == "Icono")
-                    child.gameObject.SetActive(true);
-            }
+            icon.SetActive(true);
         }
     }
 
@@ -56,11 +50,7 @@ public class NPCTarget : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            foreach (Transform child in transform)
-            {
-                if (child.tag == "Icono")
-                    child.gameObject.SetActive(false);
-            }
+            icon.SetActive(false);
         }
     }
 }

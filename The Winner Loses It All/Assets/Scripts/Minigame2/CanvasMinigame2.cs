@@ -32,6 +32,7 @@ public class CanvasMinigame2 : MonoBehaviour
     public Sprite winImage;
     public Sprite loseImage;
     public Image finalText;
+    private float timer2;
 
     public GameObject endPanel;
 
@@ -47,6 +48,7 @@ public class CanvasMinigame2 : MonoBehaviour
         instructions.SetActive(true);
         textoCentral.gameObject.SetActive(false);
 
+        timer2 = 0f;
         win = false;
         lose = false;
         finalText.gameObject.SetActive(false);
@@ -60,16 +62,17 @@ public class CanvasMinigame2 : MonoBehaviour
     {
         if(win || lose)
         {
-            timer += Time.deltaTime;
+            timer2 += Time.deltaTime;
 
-            if (timer >= 2f)
+            if (timer2 >= 2f)
             {
-                timer = 0;
+                timer2 = 0;
                 finalText.gameObject.SetActive(false);
 
                 if (win)
                 {
                     endPanel.SetActive(true);
+                    Invoke("nextLevel", 1.5f);
                 }
 
                 if (lose)
@@ -134,7 +137,7 @@ public class CanvasMinigame2 : MonoBehaviour
                 timer = 0;
                 createCards.create();
                 playing = true;
-                Invoke("canPause", 4f);
+                Invoke("canPause", 5f);
             }
         }
     }
@@ -171,5 +174,10 @@ public class CanvasMinigame2 : MonoBehaviour
         lose = true;
         finalText.sprite = loseImage;
         finalText.gameObject.SetActive(true);
+    }
+
+    private void nextLevel()
+    {
+        minigameManager.changeScene();
     }
 }

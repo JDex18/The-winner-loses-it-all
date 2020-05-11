@@ -16,12 +16,14 @@ public class CreateCards : MonoBehaviour
 
     public CanvasMinigame2 canvasMinigame;
     private int count;
+    private int x;
     // Start is called before the first frame update
     void Start()
     {
         //create();//PROVISIONAL. PONLO DESPUÉS DONDE QUIERAS QUE SE EMPIECEN A CREAR LAS CARTAS
         canShow = false;
         count = 0;
+        x = 0;
     }
 
     // Update is called once per frame
@@ -34,11 +36,13 @@ public class CreateCards : MonoBehaviour
     {
         for(int i = 0; i < width; i++)
         {
-            for(int x = 0; x < width; x++)
+            x = 0;
+            for(int j = 0; j < width; j++)
             {
                 GameObject card = Instantiate(cardPrefab, new Vector3(x, 0, i), Quaternion.Euler(new Vector3(0, 180, 0)));
                 cards.Add(card);
                 card.GetComponent<Card>().startPosition = new Vector3(x, 0, i);
+                x += 2;
             }
 
         }
@@ -83,7 +87,6 @@ public class CreateCards : MonoBehaviour
         {
             if(checkCards(showedCard.gameObject, card.gameObject))
             {
-                Debug.Log("ACIERTO");
                 count++;
                 if(count == 8)
                 {
@@ -100,7 +103,6 @@ public class CreateCards : MonoBehaviour
 
             else
             {
-                Debug.Log("FALLO");
                 canvasMinigame.wrongCards();
                 card.hideCard();
                 showedCard.hideCard();

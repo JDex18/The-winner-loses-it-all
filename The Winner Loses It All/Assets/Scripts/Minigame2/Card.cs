@@ -26,7 +26,7 @@ public class Card : MonoBehaviour
         createCards = GameObject.Find("GameManager").GetComponent<CreateCards>();
         anim = GetComponent<Animator>();
         Invoke("show", 0.1f);
-        Invoke("hideAnimation", 4f);
+        Invoke("hideAnimation", 5f);
     }
 
     // Update is called once per frame
