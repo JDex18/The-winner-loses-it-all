@@ -89,6 +89,8 @@
     <Compile Include="Assets\Scripts\Minigame2\Card.cs" />
     <Compile Include="Assets\Scripts\Minigame2\CreateCards.cs" />
     <Compile Include="Assets\Scripts\Minigame2\Minigame2Manager.cs" />
+    <Compile Include="Assets\Scripts\Minigame3\Button.cs" />
+    <Compile Include="Assets\Scripts\Minigame3\ButtonsManager.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\Vehicles.cs" />
     <Reference Include="Unity.Timeline.Editor">
