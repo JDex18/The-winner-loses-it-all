@@ -15,12 +15,24 @@ public class ButtonsManager : MonoBehaviour
     private int count;
     private int playerCount;
     private int level;
+    public int round;
 
     [Range(0.1f, 2f)]
     public float speed;
 
-    private int i;
-    private int i2;
+    public CanvasMinigame3 canvasMinigame;
+    //private int i;
+    //private int i2;
+
+    [Header("Numbers")]
+    public Image countImage;
+    public Sprite image0;
+    public Sprite image1;
+    public Sprite image2;
+    public Sprite image3;
+    public Sprite image4;
+    public Sprite image5;
+    public Sprite image6;
 
     // Start is called before the first frame update
     void Start()
@@ -28,9 +40,9 @@ public class ButtonsManager : MonoBehaviour
         completeRandomList();
         playerTurn = false;
         computerTurn = true;
-        i = 0;
-        i2 = 0;
-        Invoke("ComputerTurn", 2f);
+        //i = 0;
+        //i2 = 0;
+        round = 0;
     }
 
     // Update is called once per frame
@@ -41,15 +53,25 @@ public class ButtonsManager : MonoBehaviour
 
     void completeRandomList()
     {
-        for(int i = 0; i < 100; i++)//al haber diez turnos, con 100 habrá suficientes. Pero si usamos más turnos, entonces habrá que aumentar el número
+        for(int i = 0; i < 10; i++)//al haber diez turnos, con 100 habrá suficientes. Pero si usamos más turnos, entonces habrá que aumentar el número
         {
-            randomList.Add(Random.Range(0, 4));
+            int color = Random.Range(0, 4);
+
+            if(i >= 2)//para que no haga más de dos colores seguidos
+            {
+                while(color == randomList[i-2] && color == randomList[i - 1])
+                {
+                    color = Random.Range(0, 4);
+                }
+            }
+
+            randomList.Add(color);
         }
 
         listCompleted = true;
     }
 
-    public void changeTurn()
+    private void changeTurn()
     {
         if (computerTurn)
         {
@@ -63,7 +85,7 @@ public class ButtonsManager : MonoBehaviour
             computerTurn = true;
             count = 0;
             playerCount = 0;
-            i2 = i;
+            //i2 = i;
             Invoke("ComputerTurn", 2f);
         }
     }
@@ -72,7 +94,7 @@ public class ButtonsManager : MonoBehaviour
     {
         if(listCompleted && computerTurn)
         {
-            buttons[randomList[i]].enableButton(); //si cambiamos i por count, funcionará como el juego tradicional de simon dice (el patrón se va sumando)
+            buttons[randomList[count]].enableButton(); //si cambiamos i por count, funcionará como el juego tradicional de simon dice (el patrón se va sumando)
 
             if (count >= level)
             {
@@ -85,7 +107,7 @@ public class ButtonsManager : MonoBehaviour
                 count++;
             }
 
-            i++;
+            //i++;
 
             Invoke("ComputerTurn", speed);
         }
@@ -93,22 +115,92 @@ public class ButtonsManager : MonoBehaviour
 
     public void playerClick(int numButton)
     {
-        if(numButton != randomList[i2 + playerCount])//si vas a hacerlo como el original, quita la i2
+        if(numButton != randomList[playerCount])//si vas a hacerlo como el original, quita la i2
         {
             Debug.Log("FALLO");
-            playerTurn = false;
+            canvasMinigame.wrongButton();
+            countImage.sprite = image0;
+            resetGame();
             return;
         }
 
         if(playerCount == count)
         {
             Debug.Log("ACIERTO");
-            changeTurn();
+            if(count == 5)
+            {
+                countImage.sprite = image6;
+                round++;
+                if(round == 4)
+                {
+                    canvasMinigame.winGame();
+                }
+
+                else
+                {
+                    canvasMinigame.roundCompleted();
+                    resetGame();
+                }
+            }
+
+            else
+            {
+                switch (level)
+                {
+                    case 1:
+                        countImage.sprite = image1;
+                        break;
+                    case 2:
+                        countImage.sprite = image2;
+                        break;
+                    case 3:
+                        countImage.sprite = image3;
+                        break;
+                    case 4:
+                        countImage.sprite = image4;
+                        break;
+                    case 5:
+                        countImage.sprite = image5;
+                        break;
+                }
+                changeTurn();
+            }
         }
 
         else
         {
             playerCount++;
         }
+    }
+
+    private void resetGame()
+    {
+        playerTurn = false;
+        count = 0;
+        playerCount = 0;
+        level = 0;
+        randomList.Clear();
+        completeRandomList();
+        computerTurn = true;
+
+        switch (round)
+        {
+            case 1:
+                speed = 0.9f;
+                break;
+            case 2:
+                speed = 0.6f;
+                break;
+            case 3:
+                speed = 0.3f;
+                break;
+        }
+
+    }
+
+    public void startGame()
+    {
+        countImage.sprite = image0;
+        Invoke("ComputerTurn", 2f);
     }
 }

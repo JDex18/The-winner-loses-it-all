@@ -13,10 +13,13 @@ public class Button : MonoBehaviour
 
     public ButtonsManager buttonsManager;
 
+    private Animation anim;
+
     // Start is called before the first frame update
     void Start()
     {
         lightIntensity = light.intensity;
+        anim = GetComponent<Animation>();
     }
 
     // Update is called once per frame
@@ -24,7 +27,7 @@ public class Button : MonoBehaviour
     {
         if(disabling && !disabled)
         {
-            light.intensity = Mathf.Lerp(light.intensity, 0f, 0.065f);
+            light.intensity = Mathf.Lerp(light.intensity, 0f, 0.1f);//la velocidad original es 0.065f
 
             if (light.intensity <= 0.02)
             {
@@ -44,6 +47,22 @@ public class Button : MonoBehaviour
         {
             buttonsManager.playerClick(numButton);
         }
+        /*switch (numButton)
+        {
+            case 0:
+                anim.Play("ButtonAnimationGreen");
+                break;
+            case 1:
+                anim.Play("ButtonAnimationRed");
+                break;
+            case 2:
+                anim.Play("ButtonAnimationYellow");
+                break;
+            case 3:
+                anim.Play("ButtonAnimationBlue");
+                break;
+        }*/
+        anim.Play();
         Invoke("disableButton", 0.1f);
     }
 

@@ -90,7 +90,16 @@ public class CreateCards : MonoBehaviour
                 count++;
                 if(count == 8)
                 {
-                    canvasMinigame.winGame();
+                    Minigame2Manager.round++;
+                    if(Minigame2Manager.round == 3)
+                    {
+                        canvasMinigame.winGame();
+                    }
+
+                    else
+                    {
+                        canvasMinigame.roundCompleted();
+                    }
                     Minigame2Manager.start = false;
                 }
 

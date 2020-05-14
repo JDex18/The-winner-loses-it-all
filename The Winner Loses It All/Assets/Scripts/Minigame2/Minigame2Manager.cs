@@ -10,6 +10,8 @@ public class Minigame2Manager : MonoBehaviour
     private float timer;
     public static bool start;
     public CanvasMinigame2 canvasMinigame;
+    public static int round;
+    private float limitTime;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,8 @@ public class Minigame2Manager : MonoBehaviour
         timer = 0f;
         start = false;
         time.gameObject.SetActive(false);
+        round = 0;
+        limitTime = 90f;
     }
 
     // Update is called once per frame
@@ -25,14 +29,14 @@ public class Minigame2Manager : MonoBehaviour
         if (start)
         {
             timer += Time.deltaTime;
-            if(timer >= 75f)
+            if(timer >= limitTime)
             {
-                timer = 75f;
+                timer = limitTime;
                 start = false;
                 canvasMinigame.loseGame();
             }
 
-            time.text = CalcularTiempo(75 - (int)timer);
+            time.text = CalcularTiempo((int)limitTime - (int)timer);
         }
     }
 
@@ -74,6 +78,18 @@ public class Minigame2Manager : MonoBehaviour
 
     public void resetTime()
     {
+        switch (round)
+        {
+            case 0:
+                limitTime = 90f;
+                break;
+            case 1:
+                limitTime = 75f;
+                break;
+            case 2:
+                limitTime = 60f;
+                break;
+        }
         time.gameObject.SetActive(false);
     }
 

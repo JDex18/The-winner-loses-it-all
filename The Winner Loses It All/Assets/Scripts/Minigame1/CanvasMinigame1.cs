@@ -21,7 +21,9 @@ public class CanvasMinigame1 : MonoBehaviour
     public static bool good;
     public Image textoCentral;
     public Sprite failImage;
-    public Sprite goodImage;
+    public Sprite goodImage1;
+    public Sprite goodImage2;
+    public Sprite goodImage3;
     public Sprite winImage;
 
     private bool win;
@@ -149,7 +151,18 @@ public class CanvasMinigame1 : MonoBehaviour
 
         else
         {
-            textoCentral.sprite = goodImage;
+            switch (Minigame1Manager.targetCount)
+            {
+                case 1:
+                    textoCentral.sprite = goodImage1;
+                    break;
+                case 2:
+                    textoCentral.sprite = goodImage2;
+                    break;
+                case 3:
+                    textoCentral.sprite = goodImage3;
+                    break;
+            }
         }
         textoCentral.gameObject.SetActive(true);
         good = true;

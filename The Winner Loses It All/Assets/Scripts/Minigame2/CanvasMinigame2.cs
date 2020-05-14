@@ -27,6 +27,9 @@ public class CanvasMinigame2 : MonoBehaviour
     public Sprite failImage;
     public Sprite goodImage;
 
+    public Sprite roundImage1;
+    public Sprite roundImage2;
+
     private bool win;
     private bool lose;
     public Sprite winImage;
@@ -71,8 +74,23 @@ public class CanvasMinigame2 : MonoBehaviour
 
                 if (win)
                 {
-                    endPanel.SetActive(true);
-                    Invoke("nextLevel", 1.5f);
+                    if(Minigame2Manager.round == 3)
+                    {
+                        endPanel.SetActive(true);
+                        Invoke("nextLevel", 1.5f);
+                    }
+
+                    else
+                    {
+                        win = false;
+                        start = true;
+                        playing = false;
+                        cuenta.gameObject.SetActive(true);
+                        cuenta.sprite = image3;
+                        minigameManager.resetTime();
+                        createCards.resetCards();
+                        pauseButtonsController.deactivatePauseMenu();
+                    }
                 }
 
                 if (lose)
@@ -83,6 +101,7 @@ public class CanvasMinigame2 : MonoBehaviour
                     instructions.SetActive(true);
                     minigameManager.resetTime();
                     createCards.resetCards();
+                    pauseButtonsController.deactivatePauseMenu();
                 }
             }
 
@@ -179,5 +198,21 @@ public class CanvasMinigame2 : MonoBehaviour
     private void nextLevel()
     {
         minigameManager.changeScene();
+    }
+
+    public void roundCompleted()
+    {
+        switch (Minigame2Manager.round)
+        {
+            case 1:
+                finalText.sprite = roundImage1;
+                break;
+            case 2:
+                finalText.sprite = roundImage2;
+                break;
+        }
+
+        finalText.gameObject.SetActive(true);
+        win = true;
     }
 }

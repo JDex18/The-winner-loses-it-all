@@ -4184,8 +4184,10 @@ MonoBehaviour:
   cuenta: {fileID: 673857609}
   textoCentral: {fileID: 583138935}
   failImage: {fileID: 21300000, guid: 4fdbd83156808b146b67cdeea1f8ed83, type: 3}
-  goodImage: {fileID: 21300000, guid: 0267b969a9476e24288cddba95cb409e, type: 3}
-  winImage: {fileID: 21300000, guid: 6711fee3bf346c54b9ef887cb33145fb, type: 3}
+  goodImage1: {fileID: 21300000, guid: 779aebf852f523f43b0d545d09c546b2, type: 3}
+  goodImage2: {fileID: 21300000, guid: d347901ea8946c441963dfec2135824a, type: 3}
+  goodImage3: {fileID: 21300000, guid: 920af2b5b258a0645bdc396960ee4102, type: 3}
+  winImage: {fileID: 21300000, guid: 6cd2f225453c5144a892d96d28959cd6, type: 3}
   endPanel: {fileID: 422669726}
   pauseButtonsController: {fileID: 728521185}
 --- !u!114 &728521187
