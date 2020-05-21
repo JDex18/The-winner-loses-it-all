@@ -106,7 +106,7 @@ public class Level2Canvas : MonoBehaviour
     {
         end = true;
         endDialogue.SetActive(true);
-        PlayerMovementLevel2.play = false;
+        //PlayerMovementLevel2.play = false;
         timer = 0;//PARA ASEGURARSE DE QUE ESTÁ A CERO Y VOLVER A USARLO PARA TERMINAR EL NIVEL
     }
 }

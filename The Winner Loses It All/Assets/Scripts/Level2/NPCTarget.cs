@@ -29,7 +29,7 @@ public class NPCTarget : MonoBehaviour
                 transform.LookAt(player.transform);
                 player.transform.LookAt(transform);
                 anim.SetBool("isTalking", true);
-
+                controller.enConversacion = true;
                 icon.SetActive(false);
 
                 levelCanvas.finish();

@@ -399,6 +399,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1769035688}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &851305310 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1769035688}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &912819059
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,8 +922,8 @@ PrefabInstance:
       propertyPath: m_Text
       value: "Toni est\xE1 en un aprieto, y tiene que inventarse algo para que no
         le pillen. Encuentra las parejas antes de que termine el tiempo, o tu barra
-        de recaida subir\xE1 y tendr\xE1s que volver a empezar.\n\nSi est\xE1s preparado,
-        presiona Espacio."
+        de recaida subir\xE1 y tendr\xE1s que volver a empezar.\n\nSupera las tres
+        rondas para ganar\n\nSi est\xE1s preparado, presiona Espacio."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4052b333fce7470469a68c216e46e0f9, type: 3}
@@ -994,6 +1006,7 @@ MonoBehaviour:
   image1: {fileID: 21300000, guid: 8ef5a4a292ec4534b9f778700922ad77, type: 3}
   imageYa: {fileID: 21300000, guid: c7e03ac984d3df84c94296b1f72e5726, type: 3}
   instructions: {fileID: 15965050}
+  instructionsText: {fileID: 851305310}
   cuenta: {fileID: 912819062}
   createCards: {fileID: 1793743063}
   textoCentral: {fileID: 1992603953}

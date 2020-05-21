@@ -74,6 +74,9 @@
     <Compile Include="Assets\Scripts\Level2\NPCTarget.cs" />
     <Compile Include="Assets\Scripts\Level2\PlayerMovementLevel2.cs" />
     <Compile Include="Assets\Scripts\Level3\Level3Canvas.cs" />
+    <Compile Include="Assets\Scripts\Level3\NPCTarget2.cs" />
+    <Compile Include="Assets\Scripts\Level3\Player3.cs" />
+    <Compile Include="Assets\Scripts\Level4\Level4Canvas.cs" />
     <Compile Include="Assets\Scripts\Managers\ButtonsController.cs" />
     <Compile Include="Assets\Scripts\Managers\PauseButtonsController.cs" />
     <Compile Include="Assets\Scripts\Managers\Spawner.cs" />
@@ -92,8 +95,15 @@
     <Compile Include="Assets\Scripts\Minigame3\Button.cs" />
     <Compile Include="Assets\Scripts\Minigame3\ButtonsManager.cs" />
     <Compile Include="Assets\Scripts\Minigame3\CanvasMinigame3.cs" />
+    <Compile Include="Assets\Scripts\Minigame4\CanvasMinigame4.cs" />
+    <Compile Include="Assets\Scripts\Minigame4\Minigame4Manager.cs" />
+    <Compile Include="Assets\Scripts\Minigame4\Object.cs" />
+    <Compile Include="Assets\Scripts\Minigame4\ObjectGood.cs" />
+    <Compile Include="Assets\Scripts\Minigame4\PlayerMovementMinigame4.cs" />
+    <Compile Include="Assets\Scripts\Minigame4\SpawnerMinigame4.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\Vehicles.cs" />
+    <None Include="Assets\BarAssets\BarProps\Credits.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

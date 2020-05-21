@@ -12,6 +12,7 @@ public class CanvasMinigame2 : MonoBehaviour
 
 
     public GameObject instructions;
+    public Text instructionsText;
     public Image cuenta;
 
     private bool start;
@@ -98,6 +99,7 @@ public class CanvasMinigame2 : MonoBehaviour
                     lose = false;
                     start = false;
                     playing = false;
+                    instructionsText.text = "Si estás preparado, presiona Espacio";
                     instructions.SetActive(true);
                     minigameManager.resetTime();
                     createCards.resetCards();

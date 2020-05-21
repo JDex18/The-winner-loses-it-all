@@ -13,7 +13,7 @@ public class Level3Canvas : MonoBehaviour
 
     private float timer;
 
-    string[] dialogue = new string[5];
+    string[] dialogue = new string[6];
     private bool end;
     public GameObject endDialogue;
     public GameObject finalPanel;
@@ -30,7 +30,7 @@ public class Level3Canvas : MonoBehaviour
         timer = 0f;
 
         completeDialogue();
-        i = 0;
+        i = 1;
     }
 
     // Update is called once per frame
@@ -68,11 +68,12 @@ public class Level3Canvas : MonoBehaviour
 
     private void completeDialogue()
     {
-        dialogue[0] = "Toni: Hola cariño. De que querías que hablasemos?";
-        dialogue[1] = "Mónica: Hoy he pasado por la farmacia cuando volvía del trabajo, y al pasar la tarjeta me la han denegado";
-        dialogue[2] = "Toni: Bueno no pasa nada, habrá sido un error. A ver dejame ver la fecha de...";
-        dialogue[3] = "Mónica: Toni he llamado al banco, y nuestra cuenta conjunta está a cero. Puedes explicarme que está pasando?";
-        dialogue[4] = "Toni: Yo...";
+        dialogue[0] = "Iker: Eyy Toni, que tal?";
+        dialogue[1] = "Toni: Ahh hola Iker. Venía a por un café. Tu que tal estás?";
+        dialogue[2] = "Iker: Bien tío. Oye lo del partido de hoy es una apuesta segura. Te animas y ganamos una pasta?";
+        dialogue[3] = "Toni: No sé Iker, creo que mejor no...";
+        dialogue[4] = "Iker: Venga Toni no te eches atrás. Al salir del curro vamos tu y yo a la casa de apuestas y nos la jugamos, como en los viejos tiempo.";
+        dialogue[5] = "Toni: No debería...";
     }
 
     private void endLevel()
@@ -97,7 +98,7 @@ public class Level3Canvas : MonoBehaviour
             timer += Time.deltaTime;
             if (timer >= 1f)
             {
-                SceneManager.LoadScene("SecondMinigame");
+                SceneManager.LoadScene("ThirdMinigame");
             }
         }
     }
@@ -106,7 +107,7 @@ public class Level3Canvas : MonoBehaviour
     {
         end = true;
         endDialogue.SetActive(true);
-        PlayerMovementLevel2.play = false;
+        //PlayerMovementLevel2.play = false;
         timer = 0;//PARA ASEGURARSE DE QUE ESTÁ A CERO Y VOLVER A USARLO PARA TERMINAR EL NIVEL
     }
 }

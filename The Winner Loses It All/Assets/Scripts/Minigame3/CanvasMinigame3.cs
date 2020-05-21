@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CanvasMinigame3 : MonoBehaviour
 {
@@ -59,7 +60,7 @@ public class CanvasMinigame3 : MonoBehaviour
                 timer = 0;
                 textoCentral.gameObject.SetActive(false);
                 endPanel.SetActive(true);
-                //Invoke("nextLevel", 1.5f);
+                Invoke("nextLevel", 1.5f);
             }
 
             return;
@@ -163,5 +164,10 @@ public class CanvasMinigame3 : MonoBehaviour
         win = true;
         textoCentral.sprite = winImage;
         textoCentral.gameObject.SetActive(true);
+    }
+
+    private void nextLevel()
+    {
+        SceneManager.LoadScene("Level4");
     }
 }
