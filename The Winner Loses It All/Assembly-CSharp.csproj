@@ -77,6 +77,8 @@
     <Compile Include="Assets\Scripts\Level3\NPCTarget2.cs" />
     <Compile Include="Assets\Scripts\Level3\Player3.cs" />
     <Compile Include="Assets\Scripts\Level4\Level4Canvas.cs" />
+    <Compile Include="Assets\Scripts\Level4\NPCTarget3.cs" />
+    <Compile Include="Assets\Scripts\Level4\Player4.cs" />
     <Compile Include="Assets\Scripts\Managers\ButtonsController.cs" />
     <Compile Include="Assets\Scripts\Managers\PauseButtonsController.cs" />
     <Compile Include="Assets\Scripts\Managers\Spawner.cs" />

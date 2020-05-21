@@ -19,7 +19,7 @@ public class SpawnerMinigame4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (nextTimeToSpawn <= Time.time)
+        if (nextTimeToSpawn <= Time.time && PlayerMovementMinigame4.play)
         {
             spawnObject();
             nextTimeToSpawn = Time.time + spawnDelay;

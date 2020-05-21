@@ -13,7 +13,7 @@ public class Level4Canvas : MonoBehaviour
 
     private float timer;
 
-    string[] dialogue = new string[6];
+    string[] dialogue = new string[7];
     private bool end;
     public GameObject endDialogue;
     public GameObject finalPanel;
@@ -68,12 +68,13 @@ public class Level4Canvas : MonoBehaviour
 
     private void completeDialogue()
     {
-        dialogue[0] = "Iker: Eyy Toni, que tal?";
-        dialogue[1] = "Toni: Ahh hola Iker. Venía a por un café. Tu que tal estás?";
-        dialogue[2] = "Iker: Bien tío. Oye lo del partido de hoy es una apuesta segura. Te animas y ganamos una pasta?";
-        dialogue[3] = "Toni: No sé Iker, creo que mejor no...";
-        dialogue[4] = "Iker: Venga Toni no te eches atrás. Al salir del curro vamos tu y yo a la casa de apuestas y nos la jugamos, como en los viejos tiempo.";
-        dialogue[5] = "Toni: No debería...";
+        dialogue[0] = "Toni: Una máquina de apuestas?";
+        dialogue[1] = "Toni: Si ayer hubiera apostado con Iker hubiera ganado...";
+        dialogue[2] = "Toni: No, no puedo volver a caer en esto. Solo voy a empeorar la situación";
+        dialogue[3] = "Toni: Bueno... pero si pongo poco dinero tampoco será para tanto. No?";
+        dialogue[4] = "Toni: No Toni, piensa en Mónica y en Daniel. Esto no les hace ningún bien";
+        dialogue[5] = "Toni: Solo aguanta...";
+        dialogue[6] = "Toni: Cuanto tiempo más voy a tener que aguantar esto?";
     }
 
     private void endLevel()
@@ -98,7 +99,7 @@ public class Level4Canvas : MonoBehaviour
             timer += Time.deltaTime;
             if (timer >= 1f)
             {
-                SceneManager.LoadScene("ThirdMinigame");
+                SceneManager.LoadScene("FourthMinigame");
             }
         }
     }
