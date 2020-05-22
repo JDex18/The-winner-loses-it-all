@@ -64,6 +64,9 @@
   <ItemGroup>
     <Compile Include="Assets\Low Poly Animated People\RandomAnimationPicker.cs" />
     <Compile Include="Assets\OfficeAssets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
+    <Compile Include="Assets\Particle Ribbon by Moonflower Carnivore\Scripts\randomParticleRotation.cs" />
+    <Compile Include="Assets\Particle Ribbon by Moonflower Carnivore\Scripts\ReverseNormals.cs" />
+    <Compile Include="Assets\Particle Ribbon by Moonflower Carnivore\Scripts\rotation.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
     <Compile Include="Assets\Scripts\Dialogos.cs" />
     <Compile Include="Assets\Scripts\Level1\CameraFollow.cs" />
@@ -101,11 +104,14 @@
     <Compile Include="Assets\Scripts\Minigame4\Minigame4Manager.cs" />
     <Compile Include="Assets\Scripts\Minigame4\Object.cs" />
     <Compile Include="Assets\Scripts\Minigame4\ObjectGood.cs" />
+    <Compile Include="Assets\Scripts\Minigame4\Particles.cs" />
     <Compile Include="Assets\Scripts\Minigame4\PlayerMovementMinigame4.cs" />
     <Compile Include="Assets\Scripts\Minigame4\SpawnerMinigame4.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\Vehicles.cs" />
+    <None Include="Assets\Particle Ribbon by Moonflower Carnivore\Shaders\Particle Alpha Blend HDR.shader" />
     <None Include="Assets\BarAssets\BarProps\Credits.txt" />
+    <None Include="Assets\Particle Ribbon by Moonflower Carnivore\readme_Simple_Particle_Ribbon.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The Winner Loses It All/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

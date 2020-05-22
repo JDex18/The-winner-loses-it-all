@@ -15,12 +15,9 @@ public class PlayerMovementMinigame4 : MonoBehaviour
     private Quaternion startRotation;
 
     private bool fail;
-    Coroutine coroutine;
 
-    private bool limit1;
     private bool limit2;
     private bool limit3;
-    private bool limit4;
 
     Vector3 start;
     Vector3 end;
@@ -44,10 +41,8 @@ public class PlayerMovementMinigame4 : MonoBehaviour
         startRotation = transform.rotation;
         fail = false;
 
-        limit1 = false;
         limit2 = false;
         limit3 = false;
-        limit4 = false;
 
         timer = 0f;
 
@@ -147,10 +142,6 @@ public class PlayerMovementMinigame4 : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "LimitCollider")
-        {
-            limit1 = true;
-        }
 
         if (other.tag == "LimitCollider2")
         {
@@ -162,10 +153,6 @@ public class PlayerMovementMinigame4 : MonoBehaviour
             limit3 = true;
         }
 
-        if (other.tag == "LimitCollider4")
-        {
-            limit4 = true;
-        }
 
         /*if (other.tag == "Finish")
         {
@@ -184,10 +171,6 @@ public class PlayerMovementMinigame4 : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "LimitCollider")
-        {
-            limit1 = false;
-        }
 
         if (other.tag == "LimitCollider2")
         {
@@ -199,9 +182,11 @@ public class PlayerMovementMinigame4 : MonoBehaviour
             limit3 = false;
         }
 
-        if (other.tag == "LimitCollider4")
-        {
-            limit4 = false;
-        }
+    }
+
+    public void resetPlayer()
+    {
+        transform.position = startPosition;
+        transform.rotation = startRotation;
     }
 }

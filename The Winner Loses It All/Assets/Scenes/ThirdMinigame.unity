@@ -1314,6 +1314,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "Iker est\xE1 intentando convencer a Toni para apostar. Repite los patrones
+        de colores.\n\nSupera las cuatro rondas para ganar. Si fallas, tendr\xE1s
+        que repetir la ronda y la barra de integridad subir\xE1.\n\nSi est\xE1s preparado,
+        presiona Espacio."
+      objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1429,14 +1437,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: -22
       objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
-        type: 3}
-      propertyPath: m_Text
-      value: "Iker est\xE1 intentando convencer a Toni para apostar. Repite los patrones
-        de colores.\n\nSupera las cuatro rondas para ganar. Si fallas, tendr\xE1s
-        que repetir la ronda y la barra de integridad subir\xE1.\n\nSi est\xE1s preparado,
-        presiona Espacio."
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4052b333fce7470469a68c216e46e0f9, type: 3}
 --- !u!224 &481617726 stripped
@@ -1506,16 +1506,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482393635}
-  m_LocalRotation: {x: -0.1647014, y: -0, z: -0, w: 0.9863435}
-  m_LocalPosition: {x: 0, y: 0, z: 25.7}
+  m_LocalRotation: {x: -0.13101326, y: -0, z: -0, w: 0.99138063}
+  m_LocalPosition: {x: 0, y: 0, z: 24.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1123557707}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -18.960001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -15.056001, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -312.4, y: 3.4}
+  m_AnchoredPosition: {x: -312.4, y: 7.899994}
   m_SizeDelta: {x: 23.39, y: 23.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &524049347
@@ -4514,7 +4514,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 68
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -4540,7 +4540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926732898}
   m_LocalRotation: {x: 0.4580601, y: 0, z: 0, w: 0.88892126}
-  m_LocalPosition: {x: 14, y: 163, z: -34}
+  m_LocalPosition: {x: 14, y: 163, z: -30.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

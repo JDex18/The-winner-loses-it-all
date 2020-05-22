@@ -30,6 +30,7 @@ public class CanvasMinigame4 : MonoBehaviour
     public Text instructionsText;
 
     public Minigame4Manager minigameManager;
+    public PlayerMovementMinigame4 playerMovement;
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +77,8 @@ public class CanvasMinigame4 : MonoBehaviour
                 instructions.SetActive(true);
                 lose = false;
                 PlayerMovementMinigame4.play = false;
+                playerMovement.resetPlayer();
+                minigameManager.resetTime();
             }
         }
 
@@ -126,6 +129,14 @@ public class CanvasMinigame4 : MonoBehaviour
     {
         win = true;
         textoCentral.sprite = winImage;
+        textoCentral.gameObject.SetActive(true);
+        PlayerMovementMinigame4.play = false;
+    }
+
+    public void loseGame()
+    {
+        lose = true;
+        textoCentral.sprite = loseImage;
         textoCentral.gameObject.SetActive(true);
         PlayerMovementMinigame4.play = false;
     }

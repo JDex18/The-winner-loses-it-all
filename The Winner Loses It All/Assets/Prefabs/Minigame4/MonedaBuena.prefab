@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4575684185404972094}
   m_Layer: 0
   m_Name: MonedaBuena
-  m_TagString: Obstacle
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,3 +127,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   minigameManager: {fileID: 0}
+  rightEffect: {fileID: 4188160029490639633, guid: e36bf024887692a4bbc6286a341659ba,
+    type: 3}

@@ -3172,7 +3172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &468986140
 Transform:
   m_ObjectHideFlags: 0
@@ -8294,6 +8294,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instrucciones
       objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "M\xF3nica, la mujer de Toni, tiene que hablar con el sobre un tema importante.
+        Lleva a Toni hasta M\xF3nica a trav\xE9s de la casa.\n\nCuando est\xE9s preparado,
+        pulsa Espacio."
+      objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8398,13 +8405,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
-        type: 3}
-      propertyPath: m_Text
-      value: "M\xF3nica, la mujer de Toni, tiene que hablar con el sobre un tema importante.
-        Lleva a Toni hasta M\xF3nica a trav\xE9s de la casa.\n\nCuando est\xE9s preparado,
-        pulsa Espacio."
       objectReference: {fileID: 0}
     - target: {fileID: 6981106703766965276, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
@@ -10319,6 +10319,7 @@ GameObject:
   - component: {fileID: 1636652713}
   - component: {fileID: 1636652712}
   - component: {fileID: 1636652711}
+  - component: {fileID: 1636652714}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10371,6 +10372,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636652714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636652710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3262ffa0477b08448b2e85fef588662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 11400000, guid: ba146a987a4b05043a76f92d659900f6, type: 2}
 --- !u!1001 &1648273350
 PrefabInstance:
   m_ObjectHideFlags: 0

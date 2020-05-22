@@ -18,6 +18,7 @@ TagManager:
   - LimitCollider3
   - LimitCollider4
   - Card
+  - Coin
   layers:
   - Default
   - TransparentFX

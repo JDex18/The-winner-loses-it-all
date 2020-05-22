@@ -7,6 +7,7 @@ public class ObjectGood : MonoBehaviour
     public float speed;
     private Rigidbody rigidbody;
     public Minigame4Manager minigameManager;
+    public GameObject rightEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class ObjectGood : MonoBehaviour
         if (other.tag == "Player")
         {
             minigameManager.increaseHealth();
+            Instantiate(rightEffect, transform.position, rightEffect.transform.rotation);
             Destroy(gameObject);
         }
     }

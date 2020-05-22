@@ -10,6 +10,7 @@ public class Minigame4Manager : MonoBehaviour
     private float timer;
     public static bool start;
     public CanvasMinigame4 canvasMinigame;
+    public SpawnerMinigame4 spawnerMinigame;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class Minigame4Manager : MonoBehaviour
         timer = 0f;
         start = false;
         time.gameObject.SetActive(false);
+        slider.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class Minigame4Manager : MonoBehaviour
         if (start)
         {
             timer += Time.deltaTime;
+            checkTimer();
             if (timer >= 120f)
             {
                 timer = 120f;
@@ -39,6 +42,17 @@ public class Minigame4Manager : MonoBehaviour
     public void loseHealth()
     {
         slider.value -= 10;
+
+        if(slider.value <= 0 && start)
+        {
+            start = false;
+            GameObject[] coinsToRemove = GameObject.FindGameObjectsWithTag("Coin");
+            for (int i = 0; i < coinsToRemove.Length; i++)
+            {
+                Destroy(coinsToRemove[i]);
+            }
+            canvasMinigame.loseGame();
+        }
     }
 
     public void increaseHealth()
@@ -49,6 +63,8 @@ public class Minigame4Manager : MonoBehaviour
     public void startTimer()
     {
         time.gameObject.SetActive(true);
+        slider.gameObject.SetActive(true);
+        slider.value = 100;
         start = true;
         timer = 0;
     }
@@ -85,5 +101,24 @@ public class Minigame4Manager : MonoBehaviour
     public void resetTime()
     {
         time.gameObject.SetActive(false);
+        slider.gameObject.SetActive(false);
+    }
+
+    private void checkTimer()
+    {
+        if (timer >= 30f && timer <= 60f)
+        {
+            spawnerMinigame.spawnDelay = 2.3f;
+        }
+
+        else if(timer >= 60f && timer <= 90f)
+        {
+            spawnerMinigame.spawnDelay = 1.8f;
+        }
+
+        else if (timer >= 90f)
+        {
+            spawnerMinigame.spawnDelay = 1.3f;
+        }
     }
 }

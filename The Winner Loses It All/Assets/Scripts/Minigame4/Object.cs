@@ -7,6 +7,7 @@ public class Object : MonoBehaviour
     public float speed;
     private Rigidbody rigidbody;
     public Minigame4Manager minigameManager;
+    public GameObject wrongEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class Object : MonoBehaviour
         if (other.tag == "TriggerDestroy")
         {
             minigameManager.loseHealth();
+            Instantiate(wrongEffect, transform.position, wrongEffect.transform.rotation);
             Destroy(gameObject);
         }
 

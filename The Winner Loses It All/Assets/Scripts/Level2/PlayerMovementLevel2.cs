@@ -30,6 +30,7 @@ public class PlayerMovementLevel2 : MonoBehaviour
 
         controller.enConversacion = false;
         gravity = 9.8f;
+        play = false;
 
     }
 

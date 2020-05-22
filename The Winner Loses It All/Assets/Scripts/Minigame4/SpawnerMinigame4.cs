@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class SpawnerMinigame4 : MonoBehaviour
 {
-    private float spawnDelay;
+    public float spawnDelay;
     private float nextTimeToSpawn;
 
     public GameObject[] objects;
+    public GameObject[] objectsGood;
     public Transform[] spawnPoints;
+
+    private int random;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +31,18 @@ public class SpawnerMinigame4 : MonoBehaviour
 
     void spawnObject()
     {
+        random = Random.Range(0, 5);
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        Instantiate(objects[Random.Range(0, objects.Length)], spawnPoint.position, spawnPoint.rotation);
+        if (random == 0)
+        {
+            Instantiate(objectsGood[Random.Range(0, objectsGood.Length)], spawnPoint.position, spawnPoint.rotation);
+        }
+
+        else
+        {
+            Instantiate(objects[Random.Range(0, objects.Length)], spawnPoint.position, spawnPoint.rotation);
+        }
+        
+        
     }
 }

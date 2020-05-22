@@ -2339,6 +2339,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "Toni ha llevado a su hijo al colegio, y ahora se dirige a trabajar.
+        \nLleva a Toni a trav\xE9s de la ciudad hasta su oficina. Si quieres saber
+        como llegar, presiona la tecla Q para indicar el camino.\n\nSi est\xE1s preparado,
+        presiona Espacio."
+      objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2443,14 +2451,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
-        type: 3}
-      propertyPath: m_Text
-      value: "Toni ha llevado a su hijo al colegio, y ahora se dirige a trabajar.
-        \nLleva a Toni a trav\xE9s de la ciudad hasta su oficina. Si quieres saber
-        como llegar, presiona la tecla Q para indicar el camino.\n\nSi est\xE1s preparado,
-        presiona Espacio."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4052b333fce7470469a68c216e46e0f9, type: 3}
@@ -19343,7 +19343,6 @@ GameObject:
   - component: {fileID: 2081631048}
   - component: {fileID: 2081631047}
   - component: {fileID: 2081631049}
-  - component: {fileID: 2081631050}
   - component: {fileID: 2081631051}
   - component: {fileID: 2081631052}
   m_Layer: 0
@@ -19401,18 +19400,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1252475794}
   canPause: 0
---- !u!114 &2081631050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081631046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ae207372b361d540bad553f892ab184, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2081631051
 MonoBehaviour:
   m_ObjectHideFlags: 0
