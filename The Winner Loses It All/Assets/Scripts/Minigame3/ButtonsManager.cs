@@ -131,7 +131,7 @@ public class ButtonsManager : MonoBehaviour
             {
                 countImage.sprite = image6;
                 round++;
-                if(round == 4)
+                if(round == 3)
                 {
                     canvasMinigame.winGame();
                 }
@@ -186,14 +186,14 @@ public class ButtonsManager : MonoBehaviour
         switch (round)
         {
             case 1:
-                speed = 0.9f;
+                speed = 0.6f;//0.9f antes
                 break;
             case 2:
-                speed = 0.6f;
+                speed = 0.3f;//0.6f antes
                 break;
-            case 3:
+            /*case 3:
                 speed = 0.3f;
-                break;
+                break;*/
         }
 
     }

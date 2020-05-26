@@ -33,6 +33,12 @@ public class PlayerMovement22 : MonoBehaviour
 
     public CanvasMinigame1 canvasMinigame;
 
+    public bool overCard;
+    private GameObject card;
+
+    Rigidbody rigidbody;
+    private bool inPlattforms;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +61,9 @@ public class PlayerMovement22 : MonoBehaviour
 
         timer = 0;
         canMove = true;
+
+        rigidbody = GetComponent<Rigidbody>();
+        inPlattforms = false;
     }
 
     // Update is called once per frame
@@ -79,6 +88,7 @@ public class PlayerMovement22 : MonoBehaviour
                 transform.position = startPosition;
                 transform.rotation = startRotation;
                 isCoolingDown = false;
+                inPlattforms = false;
             }
 
             if (isCoolingDown)
@@ -129,7 +139,7 @@ public class PlayerMovement22 : MonoBehaviour
                     canMove = false;
                 }
 
-                else if (Mathf.Abs(horizontalMove) > 0)
+                else if (Mathf.Abs(horizontalMove) > 0 && !inPlattforms)
                 {
                     if (horizontalMove > 0 && limit2)
                     {
@@ -195,6 +205,20 @@ public class PlayerMovement22 : MonoBehaviour
             fail = true;
             canvasMinigame.wrong();
         }
+
+        if (other.tag == "Card")
+        {
+            overCard = true;
+            card = other.gameObject;
+            transform.parent = card.transform;
+            rigidbody.useGravity = false;
+            rigidbody.isKinematic = true;
+        }
+
+        if (other.tag == "inPlattforms")
+        {
+            inPlattforms = true;
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -254,6 +278,21 @@ public class PlayerMovement22 : MonoBehaviour
         if (other.tag == "LimitCollider4")
         {
             limit4 = false;
+        }
+
+        if (other.tag == "Card")
+        {
+            overCard = false;
+            card = null;
+            transform.parent = null;
+            rigidbody.useGravity = true;
+            rigidbody.isKinematic = false;
+            transform.localScale = new Vector3(0.1967f, 0.1967f, 0.1967f);
+        }
+
+        if (other.tag == "inPlattforms")
+        {
+            inPlattforms = false;
         }
     }
 }

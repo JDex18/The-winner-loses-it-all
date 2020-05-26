@@ -19,11 +19,11 @@ public class NPCTarget3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) <= 4 && Input.GetKeyDown(KeyCode.Space) && !controller.enConversacion)
+        if (Vector3.Distance(transform.position, player.transform.position) <= 4 && Input.GetKeyDown(KeyCode.Space) /*&& !controller.enConversacion*/)
         {
             if (!PauseButtonsController.paused)
             {
-                controller.enConversacion = true;
+                //controller.enConversacion = true;
                 transform.LookAt(player.transform);
                 icon.SetActive(false);
                 collider.SetActive(false);
@@ -31,6 +31,7 @@ public class NPCTarget3 : MonoBehaviour
             }
 
         }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -46,6 +47,14 @@ public class NPCTarget3 : MonoBehaviour
         if (other.tag == "Player")
         {
             icon.SetActive(false);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player" && controller.enConversacion == false)
+        {
+            icon.SetActive(true);
         }
     }
 }

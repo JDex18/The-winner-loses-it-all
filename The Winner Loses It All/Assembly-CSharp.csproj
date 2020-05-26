@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\Minigame1\Obstacles.cs" />
     <Compile Include="Assets\Scripts\Minigame1\PlayerMovement2.cs" />
     <Compile Include="Assets\Scripts\Minigame1\PlayerMovement22.cs" />
+    <Compile Include="Assets\Scripts\Minigame1\PlayerMovementMinigame2.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Spawner2.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Target.cs" />
     <Compile Include="Assets\Scripts\Minigame2\CanvasMinigame2.cs" />
@@ -108,6 +109,7 @@
     <Compile Include="Assets\Scripts\Minigame4\PlayerMovementMinigame4.cs" />
     <Compile Include="Assets\Scripts\Minigame4\SpawnerMinigame4.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
+    <Compile Include="Assets\Scripts\NPCSentado.cs" />
     <Compile Include="Assets\Scripts\Vehicles.cs" />
     <None Include="Assets\Particle Ribbon by Moonflower Carnivore\Shaders\Particle Alpha Blend HDR.shader" />
     <None Include="Assets\BarAssets\BarProps\Credits.txt" />

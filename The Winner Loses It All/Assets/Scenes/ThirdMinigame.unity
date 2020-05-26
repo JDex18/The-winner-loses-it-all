@@ -2838,7 +2838,7 @@ MonoBehaviour:
   playerTurn: 0
   computerTurn: 0
   round: 0
-  speed: 1.2
+  speed: 0.9
   canvasMinigame: {fileID: 1195051986}
   countImage: {fileID: 482393636}
   image0: {fileID: 21300000, guid: ecdefcf8b4470fe46b2c60e6d1d54073, type: 3}
@@ -2896,10 +2896,9 @@ MonoBehaviour:
   cuenta: {fileID: 1546265663}
   textoCentral: {fileID: 1627370823}
   failImage: {fileID: 21300000, guid: 23e2f4b97b6dad147867250651674eb9, type: 3}
-  goodImage1: {fileID: 21300000, guid: 779aebf852f523f43b0d545d09c546b2, type: 3}
-  goodImage2: {fileID: 21300000, guid: d347901ea8946c441963dfec2135824a, type: 3}
-  goodImage3: {fileID: 21300000, guid: 920af2b5b258a0645bdc396960ee4102, type: 3}
-  winImage: {fileID: 21300000, guid: 6cd2f225453c5144a892d96d28959cd6, type: 3}
+  goodImage1: {fileID: 21300000, guid: 70134fe95c82bd347859840a7e0a53ab, type: 3}
+  goodImage2: {fileID: 21300000, guid: a6249636d985d5c4fb116409972842af, type: 3}
+  winImage: {fileID: 21300000, guid: 0f1ec22c0633d424c8223a93555804f7, type: 3}
   endPanel: {fileID: 1368320680}
   pauseButtonsController: {fileID: 1195051985}
   buttonsManager: {fileID: 1195051983}

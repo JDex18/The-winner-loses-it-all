@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 1921138128773488041}
   - component: {fileID: 8988347791132237847}
   - component: {fileID: 6808796880878402119}
+  - component: {fileID: 6651843777759882721}
   m_Layer: 0
   m_Name: CardMinigame
-  m_TagString: Untagged
+  m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,3 +125,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   right: 0
+--- !u!65 &6651843777759882721
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079469862072405982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.76, y: 24.8, z: 0.82}
+  m_Center: {x: 0, y: 0, z: 0}

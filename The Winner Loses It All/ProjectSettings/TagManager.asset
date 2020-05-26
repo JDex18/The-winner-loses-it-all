@@ -19,6 +19,7 @@ TagManager:
   - LimitCollider4
   - Card
   - Coin
+  - inPlattforms
   layers:
   - Default
   - TransparentFX

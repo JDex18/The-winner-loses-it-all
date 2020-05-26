@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NPCSentado
+  m_Controller: {fileID: 9100000, guid: c275ce6131cf0c34a8d196417cad4a4e, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 138b278d0724054478239fdd6d2e6ba8,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: a48a270eedf60f644bd60909f0597190,
+      type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 1ed1c165eaf7b1244b21a06872565a9c,
+      type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: dead8ed637362514ca82b57e44a61c5f,
+      type: 3}
