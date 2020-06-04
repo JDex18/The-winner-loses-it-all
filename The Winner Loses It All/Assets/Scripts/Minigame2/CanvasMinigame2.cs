@@ -40,6 +40,12 @@ public class CanvasMinigame2 : MonoBehaviour
 
     public GameObject endPanel;
 
+    public Image failTimer;
+    public Sprite fail3;
+    public Sprite fail2;
+    public Sprite fail1;
+    private float timer3;
+
     public PauseButtonsController pauseButtonsController;
     public Minigame2Manager minigameManager;
 
@@ -57,6 +63,7 @@ public class CanvasMinigame2 : MonoBehaviour
         lose = false;
         finalText.gameObject.SetActive(false);
         endPanel.SetActive(false);
+        timer3 = 0f;
         //pauseButtonsController.deactivatePauseMenu();
 
     }
@@ -101,6 +108,7 @@ public class CanvasMinigame2 : MonoBehaviour
                     playing = false;
                     instructionsText.text = "Si estás preparado, presiona Espacio";
                     instructions.SetActive(true);
+                    failTimer.gameObject.SetActive(false);
                     minigameManager.resetTime();
                     createCards.resetCards();
                     pauseButtonsController.deactivatePauseMenu();
@@ -111,15 +119,51 @@ public class CanvasMinigame2 : MonoBehaviour
         }
         if (fail || good)
         {
-            timer += Time.deltaTime;
+            //timer += Time.deltaTime;
 
-            if (timer >= 2f)
+            /*if (timer >= 2f)
             {
                 timer = 0;
                 textoCentral.gameObject.SetActive(false);
                 fail = false;
                 good = false;
+            }*/
+
+            if (good)
+            {
+                timer += Time.deltaTime;
+
+                if (timer >= 2f)
+                {
+                    timer = 0;
+                    textoCentral.gameObject.SetActive(false);
+                    good = false;
+                }
             }
+
+            if (fail)
+            {
+                timer3 += Time.deltaTime;
+
+                if (timer3 >= 1f && timer3 <= 2f)
+                {
+                    failTimer.sprite = fail2;
+                }
+
+                else if (timer3 >= 2f && timer3 <= 3f)
+                {
+                    failTimer.sprite = fail1;
+                    textoCentral.gameObject.SetActive(false);
+                }
+
+                else if (timer3 >= 3f)
+                {
+                    failTimer.gameObject.SetActive(false);
+                    timer3 = 0;
+                    fail = false;
+                }
+            }
+
         }
 
         if (!start)
@@ -131,6 +175,7 @@ public class CanvasMinigame2 : MonoBehaviour
                 cuenta.sprite = image3;
                 cuenta.gameObject.SetActive(true);
             }
+
         }
 
         else if(start && !playing)
@@ -174,6 +219,9 @@ public class CanvasMinigame2 : MonoBehaviour
         textoCentral.sprite = failImage;
         textoCentral.gameObject.SetActive(true);
         fail = true;
+        failTimer.gameObject.SetActive(true);
+        failTimer.sprite = fail3;
+
     }
 
     public void correctCards()

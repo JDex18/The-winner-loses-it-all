@@ -32,6 +32,12 @@ public class Minigame4Manager : MonoBehaviour
             {
                 timer = 120f;
                 start = false;
+                GameObject[] coinsToRemove = GameObject.FindGameObjectsWithTag("Coin");
+                for (int i = 0; i < coinsToRemove.Length; i++)
+                {
+                    Destroy(coinsToRemove[i]);
+                }
+                canvasMinigame.loseGame();
                 canvasMinigame.winGame();
             }
 

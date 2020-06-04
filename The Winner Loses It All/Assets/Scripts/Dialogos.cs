@@ -72,7 +72,7 @@ public class Dialogos : MonoBehaviour
     {
         personaje3[0] = "Anciana: No me puedo creer que hayan puesto esa cosa tan cerca del colegio";
         personaje3[1] = "Anciana: Mi hijo se enganchó a las apuestas, y ahora ha perdido su trabajo y tiene una deuda que nos va a llevar a toda la familia a la ruina";
-        personaje3[2] = "Anciana: Hagáme un favor y no caiga en los mismo señor. Nadie merece eso";
+        personaje3[2] = "Anciana: Hagáme un favor y no caiga en lo mismo señor. Nadie merece eso";
         personaje3[3] = "Toni: ...";
     }
 
@@ -117,7 +117,7 @@ public class Dialogos : MonoBehaviour
         personaje7[1] = "Rosa: Toni... la verdad es que no muy bien";
         personaje7[2] = "Toni: Qué ocurre?";
         personaje7[3] = "Rosa: Es mi hijo, Jaime. Sabes que tuvo un problema con las drogas, no?";
-        personaje7[4] = "Toni: Sí, recuerdo esa época. Pero superó la rehabiitación, no?";
+        personaje7[4] = "Toni: Sí, recuerdo esa época. Pero superó la rehabilitación, no?";
         personaje7[5] = "Rosa: Sí, y llevaba un par de años limpio. Pero hace un tiempo empezó a visitar páginas de apuestas";
         personaje7[6] = "Rosa: Yo no le di importancia porque bueno, pensaba que era una forma más de entretenerse";
         personaje7[7] = "Rosa: Pero ahora está enganchado. Es como si hubiera sustituido una adicción por otra, y estoy preocupada";

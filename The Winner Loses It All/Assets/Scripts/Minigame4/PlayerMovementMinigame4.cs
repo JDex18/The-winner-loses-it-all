@@ -60,7 +60,7 @@ public class PlayerMovementMinigame4 : MonoBehaviour
             if (!canMove)//para que el  jugador no pueda volver a darle hasta que termine el movimiento
             {
                 timer2 += Time.deltaTime;
-                if (timer2 >= 0.8f)
+                if (timer2 >= 1f && Mathf.Abs(Input.GetAxis("Horizontal")) == 0 && Mathf.Abs(Input.GetAxis("Vertical")) == 0) //PARA QUE NO PUEDAS MANTENER PULSADO
                 {
                     timer2 = 0;
                     canMove = true;
@@ -119,6 +119,11 @@ public class PlayerMovementMinigame4 : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
         }
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
 
     private void Move(Vector3 target)

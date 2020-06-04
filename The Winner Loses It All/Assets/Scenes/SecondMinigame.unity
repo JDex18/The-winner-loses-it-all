@@ -581,6 +581,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114844401}
   m_CullTransparentMesh: 0
+--- !u!1 &1161358760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1161358761}
+  - component: {fileID: 1161358763}
+  - component: {fileID: 1161358762}
+  m_Layer: 5
+  m_Name: Temporizador2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1161358761
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161358760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1280751187}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -346.1, y: -46.2}
+  m_SizeDelta: {x: 39.14, y: 39.14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1161358762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161358760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8b60d907b53d87745948b4480034dd3e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1161358763
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161358760}
+  m_CullTransparentMesh: 0
 --- !u!1 &1280751183
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,6 +751,7 @@ RectTransform:
   - {fileID: 1992603951}
   - {fileID: 476312380}
   - {fileID: 1827914171}
+  - {fileID: 1161358761}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1018,6 +1092,10 @@ MonoBehaviour:
   loseImage: {fileID: 21300000, guid: 24bccbd3b2d9abb4dbbe509f04706f29, type: 3}
   finalText: {fileID: 476312381}
   endPanel: {fileID: 1827914170}
+  failTimer: {fileID: 1161358762}
+  fail3: {fileID: 21300000, guid: 8b60d907b53d87745948b4480034dd3e, type: 3}
+  fail2: {fileID: 21300000, guid: 9d63e93d79c92dd47ac3ef4faf08e2d7, type: 3}
+  fail1: {fileID: 21300000, guid: f8c0aaad9924ae64789a1f4b6754639e, type: 3}
   pauseButtonsController: {fileID: 1793743066}
   minigameManager: {fileID: 1793743067}
 --- !u!114 &1793743066
