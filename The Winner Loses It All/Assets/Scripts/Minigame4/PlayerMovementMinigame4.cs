@@ -193,5 +193,8 @@ public class PlayerMovementMinigame4 : MonoBehaviour
     {
         transform.position = startPosition;
         transform.rotation = startRotation;
+        canMove = true;
+        isCoolingDown = false;
+        end = startPosition;
     }
 }

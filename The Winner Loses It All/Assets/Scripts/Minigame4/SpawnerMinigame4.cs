@@ -31,9 +31,9 @@ public class SpawnerMinigame4 : MonoBehaviour
 
     void spawnObject()
     {
-        random = Random.Range(0, 5);
+        random = Random.Range(0, Minigame4Manager.Probability);
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        if (random == 0)
+        if (random == 0 && Minigame4Manager.lifehealth < 100f)
         {
             Instantiate(objectsGood[Random.Range(0, objectsGood.Length)], spawnPoint.position, spawnPoint.rotation);
         }
@@ -41,8 +41,6 @@ public class SpawnerMinigame4 : MonoBehaviour
         else
         {
             Instantiate(objects[Random.Range(0, objects.Length)], spawnPoint.position, spawnPoint.rotation);
-        }
-        
-        
+        }   
     }
 }

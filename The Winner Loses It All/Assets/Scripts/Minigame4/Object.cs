@@ -4,16 +4,26 @@ using UnityEngine;
 
 public class Object : MonoBehaviour
 {
-    public float speed;
+    //public float speed;
     private Rigidbody rigidbody;
     public Minigame4Manager minigameManager;
     public GameObject wrongEffect;
+    public int objectId;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        transform.rotation = Quaternion.Euler(new Vector3(90, 0, 0));
+        switch (objectId)
+        {
+            case 0:
+                transform.rotation = Quaternion.Euler(new Vector3(90, 0, 0));
+                break;
+            case 1:
+                transform.rotation = Quaternion.Euler(new Vector3(-35.663f, 2.367f, -37.463f));
+                break;
+        }
+        
 
         minigameManager = GameObject.Find("GameManager").GetComponent<Minigame4Manager>();
     }
@@ -21,7 +31,7 @@ public class Object : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigidbody.velocity = new Vector3(0f, -1f, 0) * speed;
+        rigidbody.velocity = new Vector3(0f, -1f, 0) * minigameManager.Speed;
     }
 
     private void OnTriggerEnter(Collider other)
