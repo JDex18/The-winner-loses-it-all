@@ -82,8 +82,11 @@
     <Compile Include="Assets\Scripts\Level4\Level4Canvas.cs" />
     <Compile Include="Assets\Scripts\Level4\NPCTarget3.cs" />
     <Compile Include="Assets\Scripts\Level4\Player4.cs" />
+    <Compile Include="Assets\Scripts\Managers\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ButtonsController.cs" />
+    <Compile Include="Assets\Scripts\Managers\Contador.cs" />
     <Compile Include="Assets\Scripts\Managers\PauseButtonsController.cs" />
+    <Compile Include="Assets\Scripts\Managers\Sound.cs" />
     <Compile Include="Assets\Scripts\Managers\Spawner.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Camera2.cs" />
     <Compile Include="Assets\Scripts\Minigame1\CanvasMinigame1.cs" />

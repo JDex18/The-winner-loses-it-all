@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &623890916670557740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 623890916670557730}
+  - component: {fileID: 623890916670557741}
+  m_Layer: 0
+  m_Name: AudioManagerMinigame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &623890916670557730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623890916670557740}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &623890916670557741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623890916670557740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a936240750ea7845bc8f5aa368198db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Dialogo
+    clip: {fileID: 8300000, guid: ae74ad18d8e0ab440b3341ec20816dbd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Ambiente
+    clip: {fileID: 8300000, guid: febdf1dbfb6f1af40badb6eccfea99fd, type: 3}
+    volume: 0.356
+    pitch: 0.79
+    loop: 1
+    source: {fileID: 0}
+  - name: Intro
+    clip: {fileID: 8300000, guid: 9fa58d4b481f32847b4c2007dfa78884, type: 3}
+    volume: 1
+    pitch: 1.82
+    loop: 0
+    source: {fileID: 0}
+  - name: Pista
+    clip: {fileID: 8300000, guid: 2a576b887617a0c47860fd0262326d7b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pausa
+    clip: {fileID: 8300000, guid: 4b7c13277d4cd44488cfbc6c6fc9b97f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Fallo
+    clip: {fileID: 8300000, guid: 8368c3538d03acf408a90b512d7eb6b9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Salto
+    clip: {fileID: 8300000, guid: 37595e09b7a3fd047b2b9ff23963765b, type: 3}
+    volume: 0.374
+    pitch: 1.82
+    loop: 0
+    source: {fileID: 0}
+  - name: Acierto
+    clip: {fileID: 8300000, guid: 20a71e9f00193e940a5904ab829d4e3a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Victoria
+    clip: {fileID: 8300000, guid: 1cf2e3715df37bd44afcd76f6bd94779, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Start
+    clip: {fileID: 8300000, guid: e78548259b9088143a6bd19a55a308dd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Contador
+    clip: {fileID: 8300000, guid: 50930146570be8547af6b22c654cc67e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Giro
+    clip: {fileID: 8300000, guid: ae2aa71271fb10b46901a65b9efbc863, type: 3}
+    volume: 0.552
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Acierto2
+    clip: {fileID: 8300000, guid: e57c1e51c6e3f6043a3c256559a2c9f5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Fallo2
+    clip: {fileID: 8300000, guid: ad1d8a4d58eda80469b3a9ba67064158, type: 3}
+    volume: 1
+    pitch: 0.9
+    loop: 0
+    source: {fileID: 0}

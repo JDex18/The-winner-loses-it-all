@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enConversacion: 0
   enPaso: 0
+  soundEffects: 1
+  music: 1

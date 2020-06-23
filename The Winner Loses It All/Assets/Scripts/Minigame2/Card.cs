@@ -52,6 +52,7 @@ public class Card : MonoBehaviour
             //Invoke("idle", 0.3f);
             createCards.click(this);
             showing = true;
+            FindObjectOfType<AudioManager>().Play("Giro");
         }
     }
 
@@ -71,6 +72,7 @@ public class Card : MonoBehaviour
         //anim.SetBool("isHiding", true);
         animation.Play("hideAnimation");
         //Invoke("idle", 0.3f);
+        FindObjectOfType<AudioManager>().Play("Giro");
     }
 
     public void hide()//SE LLAMA DESDE UN EVENTO DE LA ANIMACIÓN

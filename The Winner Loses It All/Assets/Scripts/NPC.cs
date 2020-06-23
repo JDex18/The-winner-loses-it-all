@@ -30,6 +30,7 @@ public class NPC : MonoBehaviour
             {
                 if (i == 0) //CUANDO LA CONVERSACIÓN EMPIECE, LANZARÁ LA PRIMERA FRASE
                 {
+                    FindObjectOfType<AudioManager>().Play("Dialogo");
                     activarDialogo();
                 }
 

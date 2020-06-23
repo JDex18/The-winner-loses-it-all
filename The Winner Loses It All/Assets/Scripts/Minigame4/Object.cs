@@ -46,6 +46,7 @@ public class Object : MonoBehaviour
         if (other.tag == "Player")
         {
             Destroy(gameObject);
+            FindObjectOfType<AudioManager>().Play("Acierto2");
         }
     }
 }

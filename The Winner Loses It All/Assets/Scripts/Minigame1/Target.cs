@@ -40,6 +40,17 @@ public class Target : MonoBehaviour
             reached = true;
             Minigame1Manager.targetCount++;
 
+            if(Minigame1Manager.targetCount == 4)
+            {
+                FindObjectOfType<AudioManager>().parar("Ambiente");
+                FindObjectOfType<AudioManager>().Play("Victoria");
+            }
+
+            else
+            {
+                FindObjectOfType<AudioManager>().Play("Acierto");
+            }
+
         }
     }
 }

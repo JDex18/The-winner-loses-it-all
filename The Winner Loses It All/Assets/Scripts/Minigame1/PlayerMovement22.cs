@@ -90,6 +90,7 @@ public class PlayerMovement22 : MonoBehaviour
                 isCoolingDown = false;
                 inPlattforms = false;
                 transform.parent = null;
+                FindObjectOfType<AudioManager>().Play("Fallo");
             }
 
             if (isCoolingDown)
@@ -196,6 +197,7 @@ public class PlayerMovement22 : MonoBehaviour
         start = transform.position;
         end = start + target;
         timer = 0f;
+        FindObjectOfType<AudioManager>().Play("Salto");
     }
 
     private void OnTriggerEnter(Collider other)

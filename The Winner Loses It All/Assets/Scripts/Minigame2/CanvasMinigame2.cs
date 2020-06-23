@@ -174,6 +174,7 @@ public class CanvasMinigame2 : MonoBehaviour
                 instructions.SetActive(false);
                 cuenta.sprite = image3;
                 cuenta.gameObject.SetActive(true);
+                FindObjectOfType<AudioManager>().Play("Intro");
             }
 
         }
@@ -243,6 +244,7 @@ public class CanvasMinigame2 : MonoBehaviour
         lose = true;
         finalText.sprite = loseImage;
         finalText.gameObject.SetActive(true);
+        FindObjectOfType<AudioManager>().Play("Fallo");
     }
 
     private void nextLevel()

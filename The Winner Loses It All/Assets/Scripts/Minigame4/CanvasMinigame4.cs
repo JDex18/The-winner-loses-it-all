@@ -43,6 +43,7 @@ public class CanvasMinigame4 : MonoBehaviour
         win = false;
         lose = false;
         endPanel.SetActive(false);
+        FindObjectOfType<AudioManager>().Play("Ambiente");
     }
 
     // Update is called once per frame
@@ -90,6 +91,7 @@ public class CanvasMinigame4 : MonoBehaviour
                 instructions.SetActive(false);
                 cuenta.sprite = image3;
                 cuenta.gameObject.SetActive(true);
+                FindObjectOfType<AudioManager>().Play("Intro");
             }
         }
 
@@ -131,6 +133,8 @@ public class CanvasMinigame4 : MonoBehaviour
         textoCentral.sprite = winImage;
         textoCentral.gameObject.SetActive(true);
         PlayerMovementMinigame4.play = false;
+        FindObjectOfType<AudioManager>().parar("Ambiente");
+        FindObjectOfType<AudioManager>().Play("Victoria");
     }
 
     public void loseGame()

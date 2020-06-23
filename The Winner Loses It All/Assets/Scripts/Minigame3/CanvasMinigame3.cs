@@ -100,6 +100,7 @@ public class CanvasMinigame3 : MonoBehaviour
                 instructions.SetActive(false);
                 cuenta.sprite = image3;
                 cuenta.gameObject.SetActive(true);
+                FindObjectOfType<AudioManager>().Play("Intro");
             }
         }
 

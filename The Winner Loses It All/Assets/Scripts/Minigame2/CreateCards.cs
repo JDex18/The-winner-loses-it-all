@@ -94,11 +94,13 @@ public class CreateCards : MonoBehaviour
                     if(Minigame2Manager.round == 3)
                     {
                         canvasMinigame.winGame();
+                        FindObjectOfType<AudioManager>().Play("Victoria");
                     }
 
                     else
                     {
                         canvasMinigame.roundCompleted();
+                        FindObjectOfType<AudioManager>().Play("Acierto");
                     }
                     Minigame2Manager.start = false;
                 }
@@ -107,6 +109,7 @@ public class CreateCards : MonoBehaviour
                 {
                     canvasMinigame.correctCards();
                     canShow = true;
+                    FindObjectOfType<AudioManager>().Play("Acierto2");
                 }
             }
 
@@ -115,6 +118,7 @@ public class CreateCards : MonoBehaviour
                 canvasMinigame.wrongCards();
                 card.hideCard();
                 showedCard.hideCard();
+                FindObjectOfType<AudioManager>().Play("Fallo2");
             }
 
             showedCard = null;

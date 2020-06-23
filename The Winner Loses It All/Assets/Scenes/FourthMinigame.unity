@@ -2430,6 +2430,7 @@ GameObject:
   - component: {fileID: 1566840229}
   - component: {fileID: 1566840228}
   - component: {fileID: 1566840227}
+  - component: {fileID: 1566840230}
   m_Layer: 5
   m_Name: Contador
   m_TagString: Untagged
@@ -2511,6 +2512,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566840225}
   m_CullTransparentMesh: 0
+--- !u!114 &1566840230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566840225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d2ea9a5d678dd245a6a7f2a09fdb9f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1653811265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2627,6 +2640,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "Toni est\xE1 tratando de evitar que termine apostando en la m\xE1quina
+        del bar.\n\nEvita que los objetos malos lleguen al suelo, o la barra de vida
+        bajar\xE1. Los objetos buenos recuperan vida. Para ganar, impide que la barra
+        de vida llegue a cero antes de que el tiempo acabe.\n\nSi est\xE1s preparado,
+        pulsa Espacio."
+      objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2731,15 +2753,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
-        type: 3}
-      propertyPath: m_Text
-      value: "Toni est\xE1 tratando de evitar que termine apostando en la m\xE1quina
-        del bar.\n\nEvita que los objetos malos lleguen al suelo, o la barra de vida
-        bajar\xE1. Los objetos buenos recuperan vida. Para ganar, impide que la barra
-        de vida llegue a cero antes de que el tiempo acabe.\n\nSi est\xE1s preparado,
-        pulsa Espacio."
       objectReference: {fileID: 0}
     - target: {fileID: 6981106703766965276, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
@@ -2920,6 +2933,7 @@ MonoBehaviour:
   time: {fileID: 1394569087}
   canvasMinigame: {fileID: 1828932295}
   spawnerMinigame: {fileID: 1828932297}
+  Speed: 0
 --- !u!114 &1828932299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2934,6 +2948,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1303477689}
   canPause: 0
+--- !u!1001 &1845458730
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 623890916670557740, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManagerMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557741, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557741, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: sounds.Array.data[14].name
+      value: Curar
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557741, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: sounds.Array.data[14].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ec26af72f262da4d8222f5c14633844, type: 3}
+    - target: {fileID: 623890916670557741, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: sounds.Array.data[14].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557741, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: sounds.Array.data[14].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557741, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 11400000, guid: ba146a987a4b05043a76f92d659900f6,
+        type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a7ae99e8a9c9c334dbaed767ee23caa7, type: 3}
 --- !u!1 &1971731366
 GameObject:
   m_ObjectHideFlags: 0

@@ -121,6 +121,7 @@ public class ButtonsManager : MonoBehaviour
             canvasMinigame.wrongButton();
             countImage.sprite = image0;
             resetGame();
+            FindObjectOfType<AudioManager>().Play("Fallo2");
             return;
         }
 
@@ -134,12 +135,14 @@ public class ButtonsManager : MonoBehaviour
                 if(round == 3)
                 {
                     canvasMinigame.winGame();
+                    FindObjectOfType<AudioManager>().Play("Victoria");
                 }
 
                 else
                 {
                     canvasMinigame.roundCompleted();
                     resetGame();
+                    FindObjectOfType<AudioManager>().Play("Acierto");
                 }
             }
 
@@ -163,6 +166,7 @@ public class ButtonsManager : MonoBehaviour
                         countImage.sprite = image5;
                         break;
                 }
+                FindObjectOfType<AudioManager>().Play("Acierto2");
                 changeTurn();
             }
         }

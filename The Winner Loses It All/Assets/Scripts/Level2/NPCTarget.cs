@@ -32,6 +32,7 @@ public class NPCTarget : MonoBehaviour
                 icon.SetActive(false);
 
                 levelCanvas.finish();
+                FindObjectOfType<AudioManager>().Play("Dialogo");
             }
 
         }

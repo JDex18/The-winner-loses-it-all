@@ -42,6 +42,7 @@ public class CanvasMinigame1 : MonoBehaviour
 
         win = false;
         endPanel.SetActive(false);
+        FindObjectOfType<AudioManager>().Play("Ambiente");
     }
 
     // Update is called once per frame
@@ -77,6 +78,7 @@ public class CanvasMinigame1 : MonoBehaviour
                     start = true;
                     instructions.SetActive(false);
                     cuenta.gameObject.SetActive(true);
+                    FindObjectOfType<AudioManager>().Play("Intro");
                 }
             }
 

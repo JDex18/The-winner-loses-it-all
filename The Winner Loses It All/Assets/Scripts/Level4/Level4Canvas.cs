@@ -31,6 +31,7 @@ public class Level4Canvas : MonoBehaviour
 
         completeDialogue();
         i = 1;
+        PlayerPrefs.SetInt("Level4", 1);
     }
 
     // Update is called once per frame
@@ -60,6 +61,7 @@ public class Level4Canvas : MonoBehaviour
                     instructions.SetActive(false);
                     PlayerMovementLevel2.play = true;
                     pauseButtonsController.activatePauseMenu();
+                    FindObjectOfType<AudioManager>().Play("Intro");
                 }
             }
         }
@@ -91,6 +93,8 @@ public class Level4Canvas : MonoBehaviour
             {
                 endDialogue.SetActive(false);
                 finalPanel.SetActive(true);
+                FindObjectOfType<AudioManager>().parar("Ambiente");
+                FindObjectOfType<AudioManager>().Play("Outro");
             }
         }
 
@@ -110,5 +114,6 @@ public class Level4Canvas : MonoBehaviour
         endDialogue.SetActive(true);
         //PlayerMovementLevel2.play = false;
         timer = 0;//PARA ASEGURARSE DE QUE ESTÁ A CERO Y VOLVER A USARLO PARA TERMINAR EL NIVEL
+        FindObjectOfType<AudioManager>().Play("Dialogo");
     }
 }

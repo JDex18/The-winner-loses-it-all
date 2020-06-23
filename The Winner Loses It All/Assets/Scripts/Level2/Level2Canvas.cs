@@ -31,6 +31,7 @@ public class Level2Canvas : MonoBehaviour
 
         completeDialogue();
         i = 0;
+        PlayerPrefs.SetInt("Level2", 1);
     }
 
     // Update is called once per frame
@@ -60,6 +61,7 @@ public class Level2Canvas : MonoBehaviour
                     instructions.SetActive(false);
                     PlayerMovementLevel2.play = true;
                     pauseButtonsController.activatePauseMenu();
+                    FindObjectOfType<AudioManager>().Play("Intro");
                 }
             }
         }
@@ -89,6 +91,8 @@ public class Level2Canvas : MonoBehaviour
             {
                 endDialogue.SetActive(false);
                 finalPanel.SetActive(true);
+                FindObjectOfType<AudioManager>().parar("Ambiente");
+                FindObjectOfType<AudioManager>().Play("Outro");
             }
         }
 

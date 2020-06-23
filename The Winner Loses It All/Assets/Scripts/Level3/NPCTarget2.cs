@@ -22,5 +22,6 @@ public class NPCTarget2 : MonoBehaviour
     {
         transform.LookAt(player.transform);
         anim.SetBool("isTalking", true);
+        FindObjectOfType<AudioManager>().Play("Dialogo");
     }
 }

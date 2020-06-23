@@ -32,6 +32,8 @@ public class PauseButtonsController : MonoBehaviour
                 {
                     pause();
                 }
+
+                FindObjectOfType<AudioManager>().Play("Pausa");
             }
         }
         
@@ -42,6 +44,8 @@ public class PauseButtonsController : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         paused = false;
+        FindObjectOfType<AudioManager>().Play("Pausa");
+        FindObjectOfType<AudioManager>().reanudar("Ambiente");
     }
 
     public void pause()
@@ -49,6 +53,7 @@ public class PauseButtonsController : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         paused = true;
+        FindObjectOfType<AudioManager>().parar("Ambiente");
     }
 
     public void backToMenu()

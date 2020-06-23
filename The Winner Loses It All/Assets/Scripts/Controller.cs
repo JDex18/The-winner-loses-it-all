@@ -12,6 +12,12 @@ public class Controller : ScriptableObject
 
     public bool enPaso;
 
+    public bool soundEffects = true;
+
+    public bool music = true;
+
+    public int[] levelPlayed = new int[4];
+
     /*[System.Serializable]
     public class MyArray
     {

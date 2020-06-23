@@ -44,7 +44,7 @@ public class Minigame4Manager : MonoBehaviour
                 {
                     Destroy(coinsToRemove[i]);
                 }
-                canvasMinigame.loseGame();
+                //canvasMinigame.loseGame();
                 canvasMinigame.winGame();
             }
 
@@ -66,13 +66,18 @@ public class Minigame4Manager : MonoBehaviour
                 Destroy(coinsToRemove[i]);
             }
             canvasMinigame.loseGame();
+            FindObjectOfType<AudioManager>().Play("Fallo2");
+            return;
         }
+
+        FindObjectOfType<AudioManager>().Play("Fallo");
     }
 
     public void increaseHealth()
     {
         slider.value += 10;
         lifehealth = slider.value;
+        FindObjectOfType<AudioManager>().Play("Curar");
     }
 
     public void startTimer()

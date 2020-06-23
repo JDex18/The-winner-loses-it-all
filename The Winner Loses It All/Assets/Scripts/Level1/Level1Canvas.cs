@@ -37,6 +37,9 @@ public class Level1Canvas : MonoBehaviour
 
         completeDialogue();
         i = 0;
+
+        FindObjectOfType<AudioManager>().Play("Ambiente");
+        PlayerPrefs.SetInt("Level1", 1);
     }
 
     // Update is called once per frame
@@ -66,6 +69,7 @@ public class Level1Canvas : MonoBehaviour
                     instructions.SetActive(false);
                     PlayerMovement.play = true;
                     pauseButtonsController.activatePauseMenu();
+                    FindObjectOfType<AudioManager>().Play("Intro");
                 }
             }
 
@@ -94,6 +98,7 @@ public class Level1Canvas : MonoBehaviour
         {
             arrows.SetActive(true);
             showingArrows = true;
+            FindObjectOfType<AudioManager>().Play("Pista");
         }
     }
 
@@ -117,6 +122,8 @@ public class Level1Canvas : MonoBehaviour
             {
                 endDialogue.SetActive(false);
                 finalPanel.SetActive(true);
+                FindObjectOfType<AudioManager>().parar("Ambiente");
+                FindObjectOfType<AudioManager>().Play("Outro");
             }            
         }
 
@@ -136,6 +143,7 @@ public class Level1Canvas : MonoBehaviour
         endDialogue.SetActive(true);
         PlayerMovement.play = false;
         timer = 0;//PARA ASEGURARSE DE QUE ESTÁ A CERO Y VOLVER A USARLO PARA TERMINAR EL NIVEL
+        FindObjectOfType<AudioManager>().Play("Dialogo");
     }
 
 }

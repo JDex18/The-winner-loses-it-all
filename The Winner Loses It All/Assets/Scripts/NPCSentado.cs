@@ -31,6 +31,7 @@ public class NPCSentado : MonoBehaviour
                 if (i == 0) //CUANDO LA CONVERSACIÓN EMPIECE, LANZARÁ LA PRIMERA FRASE
                 {
                     activarDialogo();
+                    FindObjectOfType<AudioManager>().Play("Dialogo");
                 }
 
                 else if (i == controller.dialogosDePersonajes[personaje].Length) //CUANDO SE HAYAN MOSTRADO TODAS LAS FRASES, SALDRÁ DE LA CONVERSACIÓN
