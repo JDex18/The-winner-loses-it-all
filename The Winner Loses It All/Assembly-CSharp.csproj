@@ -85,7 +85,10 @@
     <Compile Include="Assets\Scripts\Managers\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ButtonsController.cs" />
     <Compile Include="Assets\Scripts\Managers\Contador.cs" />
+    <Compile Include="Assets\Scripts\Managers\Ending.cs" />
+    <Compile Include="Assets\Scripts\Managers\Intro.cs" />
     <Compile Include="Assets\Scripts\Managers\PauseButtonsController.cs" />
+    <Compile Include="Assets\Scripts\Managers\SelectLevelAdvice.cs" />
     <Compile Include="Assets\Scripts\Managers\Sound.cs" />
     <Compile Include="Assets\Scripts\Managers\Spawner.cs" />
     <Compile Include="Assets\Scripts\Minigame1\Camera2.cs" />

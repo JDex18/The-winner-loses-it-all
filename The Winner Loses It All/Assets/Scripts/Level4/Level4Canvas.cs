@@ -32,6 +32,8 @@ public class Level4Canvas : MonoBehaviour
         completeDialogue();
         i = 1;
         PlayerPrefs.SetInt("Level4", 1);
+        FindObjectOfType<AudioManager>().Play("Ambiente");
+        FindObjectOfType<AudioManager>().Play("Ambiente2");
     }
 
     // Update is called once per frame
@@ -94,6 +96,7 @@ public class Level4Canvas : MonoBehaviour
                 endDialogue.SetActive(false);
                 finalPanel.SetActive(true);
                 FindObjectOfType<AudioManager>().parar("Ambiente");
+                FindObjectOfType<AudioManager>().parar("Ambiente2");
                 FindObjectOfType<AudioManager>().Play("Outro");
             }
         }

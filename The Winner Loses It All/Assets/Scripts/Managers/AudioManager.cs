@@ -39,7 +39,7 @@ public class AudioManager : MonoBehaviour
         {
             if(s.name == name)
             {
-                if((name == "Ambiente" && controller.music == false) || (name != "Ambiente" && controller.soundEffects == false))
+                if(((name == "Ambiente" || name == "Ambiente2") && controller.music == false) || ((name != "Ambiente" && name != "Ambiente2") && controller.soundEffects == false))
                 {
                     return;
                 }
@@ -72,7 +72,15 @@ public class AudioManager : MonoBehaviour
         {
             if (s.name == name)
             {
-                s.source.UnPause();
+                if (!s.source.isPlaying)
+                {
+                    s.source.Play();
+                }
+
+                else
+                {
+                    s.source.UnPause();
+                }
                 return;
             }
         }

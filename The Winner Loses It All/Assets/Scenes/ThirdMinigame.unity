@@ -953,6 +953,9 @@ MonoBehaviour:
   numButton: 0
   light: {fileID: 2073014623}
   buttonsManager: {fileID: 1195051983}
+  gameManager: {fileID: 1195051982}
+  buttonSound: {fileID: 8300000, guid: e5fd7f9d5f6205146b3b562ac304de5e, type: 3}
+  controller: {fileID: 11400000, guid: ba146a987a4b05043a76f92d659900f6, type: 2}
 --- !u!1001 &435936907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1224,6 +1227,9 @@ MonoBehaviour:
   numButton: 2
   light: {fileID: 1865444885}
   buttonsManager: {fileID: 1195051983}
+  gameManager: {fileID: 1195051982}
+  buttonSound: {fileID: 8300000, guid: 4145370aa48963948880bc1206aaa934, type: 3}
+  controller: {fileID: 11400000, guid: ba146a987a4b05043a76f92d659900f6, type: 2}
 --- !u!1 &470518456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,6 +1633,9 @@ MonoBehaviour:
   numButton: 3
   light: {fileID: 680342158}
   buttonsManager: {fileID: 1195051983}
+  gameManager: {fileID: 1195051982}
+  buttonSound: {fileID: 8300000, guid: 4af22944901d3104288d92c5f8526235, type: 3}
+  controller: {fileID: 11400000, guid: ba146a987a4b05043a76f92d659900f6, type: 2}
 --- !u!4 &537047712
 Transform:
   m_ObjectHideFlags: 0
@@ -2798,6 +2807,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ba146a987a4b05043a76f92d659900f6,
         type: 2}
+    - target: {fileID: 623890916670557741, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d818c8d6c2f01cf4188fcd5b6ff9302a, type: 3}
+    - target: {fileID: 623890916670557741, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 0.117
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7ae99e8a9c9c334dbaed767ee23caa7, type: 3}
 --- !u!1 &1147478984
@@ -2885,6 +2904,7 @@ GameObject:
   - component: {fileID: 1195051983}
   - component: {fileID: 1195051986}
   - component: {fileID: 1195051985}
+  - component: {fileID: 1195051987}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2978,6 +2998,102 @@ MonoBehaviour:
   pauseButtonsController: {fileID: 1195051985}
   buttonsManager: {fileID: 1195051983}
   instructionsText: {fileID: 1227973510}
+--- !u!82 &1195051987
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195051982}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.682
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1227973510 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
@@ -3750,6 +3866,9 @@ MonoBehaviour:
   numButton: 1
   light: {fileID: 1470786709}
   buttonsManager: {fileID: 1195051983}
+  gameManager: {fileID: 1195051982}
+  buttonSound: {fileID: 8300000, guid: faac861b9dede2c49a27abe8dcbd47ec, type: 3}
+  controller: {fileID: 11400000, guid: ba146a987a4b05043a76f92d659900f6, type: 2}
 --- !u!1 &1614150979
 GameObject:
   m_ObjectHideFlags: 0

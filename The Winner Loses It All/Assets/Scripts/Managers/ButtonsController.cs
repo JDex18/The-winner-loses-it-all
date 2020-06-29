@@ -13,6 +13,8 @@ public class ButtonsController : MonoBehaviour
     public Toggle toggle1;
     public Toggle toggle2;
 
+    public GameObject advice;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +41,7 @@ public class ButtonsController : MonoBehaviour
     public void PlayGame()
     {
         FindObjectOfType<AudioManager>().Play("Boton");
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Intro");
     }
 
     public void QuitGame()
@@ -77,6 +79,11 @@ public class ButtonsController : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Boton");
             SceneManager.LoadScene("Level1");
         }
+
+        else
+        {
+            advice.SetActive(true);
+        }
     }
 
     public void level2()
@@ -85,6 +92,11 @@ public class ButtonsController : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Boton");
             SceneManager.LoadScene("Level2");
+        }
+
+        else
+        {
+            advice.SetActive(true);
         }
     }
 
@@ -95,6 +107,11 @@ public class ButtonsController : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Boton");
             SceneManager.LoadScene("Level3");
         }
+
+        else
+        {
+            advice.SetActive(true);
+        }
     }
 
     public void level4()
@@ -103,6 +120,11 @@ public class ButtonsController : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Boton");
             SceneManager.LoadScene("Level4");
+        }
+
+        else
+        {
+            advice.SetActive(true);
         }
     }
 

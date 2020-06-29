@@ -97,4 +97,12 @@ public class PlayerMovementLevel2 : MonoBehaviour
     {
         movePlayer.y = -gravity;
     }
+
+    public void playFootstepSound()
+    {
+        if (controller.soundEffects)
+        {
+            GetComponent<AudioSource>().Play();
+        }
+    }
 }

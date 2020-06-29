@@ -32,6 +32,8 @@ public class Level3Canvas : MonoBehaviour
         completeDialogue();
         i = 1;
         PlayerPrefs.SetInt("Level3", 1);
+        FindObjectOfType<AudioManager>().Play("Ambiente");
+        FindObjectOfType<AudioManager>().Play("Ambiente2");
     }
 
     // Update is called once per frame

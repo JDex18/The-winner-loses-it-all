@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FourthMinigame.unity
     guid: c338059e07ec5684d90183451ee8b6ac
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 7f80fe4e1f525844f882041c90c1ff4f
+  - enabled: 1
+    path: Assets/Scenes/LastLevel.unity
+    guid: 1fac250141bdb2b499ce13fdbd936e81
   m_configObjects: {}

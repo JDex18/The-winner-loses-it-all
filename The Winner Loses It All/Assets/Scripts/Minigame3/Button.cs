@@ -15,6 +15,10 @@ public class Button : MonoBehaviour
 
     private Animation anim;
 
+    public GameObject gameManager;
+    public AudioClip buttonSound;
+    public Controller controller;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,31 +43,41 @@ public class Button : MonoBehaviour
 
     public void enableButton()
     {
-        disabling = false;
-        disabled = false;
-        light.intensity = lightIntensity;
-        light.gameObject.SetActive(true);
-        if (buttonsManager.playerTurn)
+        if (!PauseButtonsController.paused)
         {
-            buttonsManager.playerClick(numButton);
+            disabling = false;
+            disabled = false;
+            light.intensity = lightIntensity;
+            light.gameObject.SetActive(true);
+            if (buttonsManager.playerTurn)
+            {
+                buttonsManager.playerClick(numButton);
+            }
+
+            if (controller.soundEffects)
+            {
+                gameManager.GetComponent<AudioSource>().clip = buttonSound;
+                /*switch (numButton)
+                {
+                    case 0:
+                        gameManager.GetComponent<AudioSource>().clip = bottonGreen;
+                        break;
+                    case 1:
+                        gameManager.GetComponent<AudioSource>().clip = bottonRed;
+                        break;
+                    case 2:
+                        gameManager.GetComponent<AudioSource>().clip = bottonYellow;
+                        break;
+                    case 3:
+                        gameManager.GetComponent<AudioSource>().clip = bottonBlue;
+                        break;
+                }*/
+                gameManager.GetComponent<AudioSource>().Play();
+            }
+
+            anim.Play();
+            Invoke("disableButton", 0.1f);
         }
-        /*switch (numButton)
-        {
-            case 0:
-                anim.Play("ButtonAnimationGreen");
-                break;
-            case 1:
-                anim.Play("ButtonAnimationRed");
-                break;
-            case 2:
-                anim.Play("ButtonAnimationYellow");
-                break;
-            case 3:
-                anim.Play("ButtonAnimationBlue");
-                break;
-        }*/
-        anim.Play();
-        Invoke("disableButton", 0.1f);
     }
 
     public void disableButton()

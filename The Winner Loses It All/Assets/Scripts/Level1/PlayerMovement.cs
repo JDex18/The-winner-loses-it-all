@@ -136,4 +136,12 @@ public class PlayerMovement : MonoBehaviour
             controller.enPaso = false;
         }
     }
+
+    public void playFootstepSound()
+    {
+        if (controller.soundEffects)
+        {
+            GetComponent<AudioSource>().Play();
+        }
+    } 
 }

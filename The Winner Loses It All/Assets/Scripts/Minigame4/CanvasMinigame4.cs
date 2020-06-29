@@ -147,6 +147,6 @@ public class CanvasMinigame4 : MonoBehaviour
 
     private void nextLevel()
     {
-        SceneManager.LoadScene("Level4");
+        SceneManager.LoadScene("LastLevel");
     }
 }

@@ -46,6 +46,7 @@ public class CanvasMinigame3 : MonoBehaviour
 
         win = false;
         endPanel.SetActive(false);
+        FindObjectOfType<AudioManager>().Play("Ambiente");
     }
 
     // Update is called once per frame
@@ -165,6 +166,8 @@ public class CanvasMinigame3 : MonoBehaviour
         win = true;
         textoCentral.sprite = winImage;
         textoCentral.gameObject.SetActive(true);
+        FindObjectOfType<AudioManager>().parar("Ambiente");
+        FindObjectOfType<AudioManager>().Play("Victoria");
     }
 
     private void nextLevel()

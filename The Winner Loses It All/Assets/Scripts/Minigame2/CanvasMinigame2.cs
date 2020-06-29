@@ -64,6 +64,7 @@ public class CanvasMinigame2 : MonoBehaviour
         finalText.gameObject.SetActive(false);
         endPanel.SetActive(false);
         timer3 = 0f;
+        FindObjectOfType<AudioManager>().Play("Ambiente");
         //pauseButtonsController.deactivatePauseMenu();
 
     }
@@ -237,6 +238,8 @@ public class CanvasMinigame2 : MonoBehaviour
         win = true;
         finalText.sprite = winImage;
         finalText.gameObject.SetActive(true);
+        FindObjectOfType<AudioManager>().parar("Ambiente");
+        FindObjectOfType<AudioManager>().Play("Victoria");
     }
 
     public void loseGame()
