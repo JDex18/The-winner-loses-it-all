@@ -74,7 +74,7 @@ public class PlayerMovement22 : MonoBehaviour
             if (!canMove)
             {
                 timer2 += Time.deltaTime;
-                if(timer2 >= 0.7f && Mathf.Abs(Input.GetAxis("Horizontal")) == 0 && Mathf.Abs(Input.GetAxis("Vertical")) == 0) //PARA QUE NO PUEDAS MANTENER PULSADO
+                if(timer2 >= 0.7f /*&& Mathf.Abs(Input.GetAxis("Horizontal")) == 0 && Mathf.Abs(Input.GetAxis("Vertical")) == 0*/) //PARA QUE NO PUEDAS MANTENER PULSADO
                 {
                     timer2 = 0;
                     canMove = true;
@@ -109,8 +109,12 @@ public class PlayerMovement22 : MonoBehaviour
                 }
             }
 
-            else if(!isCoolingDown && canMove)
+            else if(!isCoolingDown && canMove )
             {
+                if(inPlattforms && !overCard)
+                {
+                    return;
+                }
                 horizontalMove = Input.GetAxis("Horizontal");
                 verticalMove = Input.GetAxis("Vertical");
 

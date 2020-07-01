@@ -10267,14 +10267,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instrucciones
       objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
-        type: 3}
-      propertyPath: m_Text
-      value: "Llega hasta cada una de las cuatro metas y gana la partida.\n\nPero
-        cuidado, esquiva los obst\xE1culos y salta sobre las cartas para no caer al
-        vac\xEDo.\n\nMuevete con las teclas W, A, S y D o las flechas. Si est\xE1s
-        preparado, presiona Espacio."
-      objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10379,6 +10371,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "Llega hasta cada una de las cuatro metas y gana la partida.\n\nPero
+        cuidado, esquiva los obst\xE1culos y salta sobre las cartas para no caer al
+        vac\xEDo.\n\nMuevete con las teclas W, A, S y D o las flechas. Si est\xE1s
+        preparado, presiona Espacio."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4052b333fce7470469a68c216e46e0f9, type: 3}
