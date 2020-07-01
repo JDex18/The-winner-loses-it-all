@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Level1\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Level1\Level1Canvas.cs" />
     <Compile Include="Assets\Scripts\Level1\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Level1\Vehicles.cs" />
     <Compile Include="Assets\Scripts\Level2\CameraFollowingSimple.cs" />
     <Compile Include="Assets\Scripts\Level2\Level2Canvas.cs" />
     <Compile Include="Assets\Scripts\Level2\NPCTarget.cs" />
@@ -116,7 +117,6 @@
     <Compile Include="Assets\Scripts\Minigame4\SpawnerMinigame4.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\NPCSentado.cs" />
-    <Compile Include="Assets\Scripts\Vehicles.cs" />
     <None Include="Assets\Particle Ribbon by Moonflower Carnivore\Shaders\Particle Alpha Blend HDR.shader" />
     <None Include="Assets\BarAssets\BarProps\Credits.txt" />
     <None Include="Assets\Particle Ribbon by Moonflower Carnivore\readme_Simple_Particle_Ribbon.txt" />

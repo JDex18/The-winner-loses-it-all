@@ -4482,10 +4482,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
         type: 3}
+      propertyPath: sounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
       propertyPath: controller
       value: 
       objectReference: {fileID: 11400000, guid: ba146a987a4b05043a76f92d659900f6,
         type: 2}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Intro
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b709ed6df4535b849a2b1386161ebd46, type: 3}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[1].loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: Pista
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2a576b887617a0c47860fd0262326d7b, type: 3}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 0.574
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[2].pitch
+      value: 0.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: Pausa
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4b7c13277d4cd44488cfbc6c6fc9b97f, type: 3}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[3].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[4].name
+      value: Outro
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
+        type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 770ee44fc81918c4e944ee86711d4b97, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5263b8b8ca1d33e4c9b80687f790c4c8, type: 3}
 --- !u!1001 &682269152
@@ -8438,13 +8508,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instrucciones
       objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
-        type: 3}
-      propertyPath: m_Text
-      value: "M\xF3nica, la mujer de Toni, tiene que hablar con el sobre un tema importante.
-        Lleva a Toni hasta M\xF3nica a trav\xE9s de la casa.\n\nCuando est\xE9s preparado,
-        pulsa Espacio."
-      objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8549,6 +8612,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "M\xF3nica, la mujer de Toni, tiene que hablar con el sobre un tema importante.
+        Lleva a Toni hasta M\xF3nica a trav\xE9s de la casa.\n\nCuando est\xE9s preparado,
+        pulsa Espacio."
       objectReference: {fileID: 0}
     - target: {fileID: 6981106703766965276, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
@@ -10076,6 +10146,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427020102271071654, guid: 3798fcf356ec7494fa152c4eadaf7147,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1427020102271071655, guid: 3798fcf356ec7494fa152c4eadaf7147,
         type: 3}

@@ -95,6 +95,7 @@ public class Level3Canvas : MonoBehaviour
                 endDialogue.SetActive(false);
                 finalPanel.SetActive(true);
                 FindObjectOfType<AudioManager>().parar("Ambiente");
+                FindObjectOfType<AudioManager>().parar("Ambiente2");
                 FindObjectOfType<AudioManager>().Play("Outro");
             }
         }

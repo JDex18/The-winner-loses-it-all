@@ -46,6 +46,7 @@ public class PauseButtonsController : MonoBehaviour
         paused = false;
         FindObjectOfType<AudioManager>().Play("Pausa");
         FindObjectOfType<AudioManager>().reanudar("Ambiente");
+        FindObjectOfType<AudioManager>().reanudar("Ambiente2");
     }
 
     public void pause()
@@ -54,6 +55,7 @@ public class PauseButtonsController : MonoBehaviour
         Time.timeScale = 0f;
         paused = true;
         FindObjectOfType<AudioManager>().parar("Ambiente");
+        FindObjectOfType<AudioManager>().parar("Ambiente2");
     }
 
     public void backToMenu()

@@ -816,11 +816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instrucciones
       objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+    - target: {fileID: 6981106704431404099, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
-      propertyPath: m_Text
-      value: "Toni ha ido al bar a estar un rato con sus amigos.\n\nLleva a Toni hasta
-        la barra para hablar con ellos.\n\nSi est\xE1s preparado, presiona Espacio."
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
@@ -926,6 +925,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "Toni ha ido al bar a estar un rato con sus amigos.\n\nLleva a Toni hasta
+        la barra para hablar con ellos.\n\nSi est\xE1s preparado, presiona Espacio."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4052b333fce7470469a68c216e46e0f9, type: 3}
@@ -4693,7 +4698,7 @@ PrefabInstance:
     - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
         type: 3}
       propertyPath: sounds.Array.data[1].volume
-      value: 0.364
+      value: 0.183
       objectReference: {fileID: 0}
     - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
         type: 3}
@@ -4708,7 +4713,7 @@ PrefabInstance:
     - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
         type: 3}
       propertyPath: sounds.Array.data[6].volume
-      value: 0.198
+      value: 0.067
       objectReference: {fileID: 0}
     - target: {fileID: 5178776725111176987, guid: 5263b8b8ca1d33e4c9b80687f790c4c8,
         type: 3}
@@ -7655,16 +7660,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.8679018
       objectReference: {fileID: 0}
-    - target: {fileID: -653521604940310880, guid: 9ae07d87820ae8a4981d63e762e59a84,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.114
-      objectReference: {fileID: 0}
-    - target: {fileID: -653521604940310880, guid: 9ae07d87820ae8a4981d63e762e59a84,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.4175193
-      objectReference: {fileID: 0}
     - target: {fileID: 7960783419970910039, guid: 9ae07d87820ae8a4981d63e762e59a84,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -7674,6 +7669,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -653521604940310880, guid: 9ae07d87820ae8a4981d63e762e59a84,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.114
+      objectReference: {fileID: 0}
+    - target: {fileID: -653521604940310880, guid: 9ae07d87820ae8a4981d63e762e59a84,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.4175193
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ae07d87820ae8a4981d63e762e59a84, type: 3}
@@ -9319,16 +9324,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 314b42f8613ce3c4693b637fbb223339, type: 2}
-    - target: {fileID: 5362272422776399495, guid: 59f8452b2947c3147a9e964462557c4b,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 785aba7f063040b43a44aa96c6c14e99, type: 2}
     - target: {fileID: 4811715212776149520, guid: 59f8452b2947c3147a9e964462557c4b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f4353932c57e92e4ea29fe0f19f05990, type: 2}
+    - target: {fileID: 5362272422776399495, guid: 59f8452b2947c3147a9e964462557c4b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 785aba7f063040b43a44aa96c6c14e99, type: 2}
     m_RemovedComponents:
     - {fileID: 8296172668885169705, guid: 59f8452b2947c3147a9e964462557c4b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 59f8452b2947c3147a9e964462557c4b, type: 3}
@@ -11126,6 +11131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427020102271071654, guid: 3798fcf356ec7494fa152c4eadaf7147,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1427020102271071655, guid: 3798fcf356ec7494fa152c4eadaf7147,
         type: 3}

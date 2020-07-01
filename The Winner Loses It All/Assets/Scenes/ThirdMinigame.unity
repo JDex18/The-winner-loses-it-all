@@ -1320,14 +1320,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
-        type: 3}
-      propertyPath: m_Text
-      value: "Iker est\xE1 intentando convencer a Toni para apostar. Repite los patrones
-        de colores.\n\nSupera las cuatro rondas para ganar. Si fallas, tendr\xE1s
-        que repetir la ronda y la barra de integridad subir\xE1.\n\nSi est\xE1s preparado,
-        presiona Espacio."
-      objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1432,6 +1424,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "Iker est\xE1 intentando convencer a Toni para apostar. Repite los patrones
+        de colores. Cada patr\xF3n tiene seis colores.\n\nSupera las cuatro rondas
+        para ganar. Si fallas, tendr\xE1s que repetir la ronda.\n\nPulsa sobre un
+        bot\xF3n para elegirlo. Si est\xE1s preparado, presiona Espacio."
       objectReference: {fileID: 0}
     - target: {fileID: 6981106703766965276, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
@@ -2815,7 +2815,7 @@ PrefabInstance:
     - target: {fileID: 623890916670557741, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
         type: 3}
       propertyPath: sounds.Array.data[1].volume
-      value: 0.117
+      value: 0.081
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7ae99e8a9c9c334dbaed767ee23caa7, type: 3}

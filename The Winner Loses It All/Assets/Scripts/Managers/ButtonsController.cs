@@ -130,15 +130,16 @@ public class ButtonsController : MonoBehaviour
 
     public void toggleMusic(bool value)
     {
-        controller.music = value;
-
+        
         if(value == false)
         {
             FindObjectOfType<AudioManager>().parar("Ambiente");
+            controller.music = value;
         }
 
         else
         {
+            controller.music = value;
             FindObjectOfType<AudioManager>().reanudar("Ambiente");
         }
     }

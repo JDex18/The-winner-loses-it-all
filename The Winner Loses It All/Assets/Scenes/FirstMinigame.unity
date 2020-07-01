@@ -8298,11 +8298,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7329320609375527882, guid: 85876892dfc75d34382cba4704c06615,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 2054d7147ca026e4e850dd83df3f602b, type: 2}
     - target: {fileID: 5640280572446654396, guid: 85876892dfc75d34382cba4704c06615,
         type: 3}
       propertyPath: cam
@@ -8314,6 +8309,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ba146a987a4b05043a76f92d659900f6,
         type: 2}
+    - target: {fileID: 7329320609375527882, guid: 85876892dfc75d34382cba4704c06615,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2054d7147ca026e4e850dd83df3f602b, type: 2}
     m_RemovedComponents:
     - {fileID: 5640280572446654394, guid: 85876892dfc75d34382cba4704c06615, type: 3}
     - {fileID: 5640280572446654396, guid: 85876892dfc75d34382cba4704c06615, type: 3}
@@ -10266,6 +10266,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Instrucciones
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "Llega hasta cada una de las cuatro metas y gana la partida.\n\nPero
+        cuidado, esquiva los obst\xE1culos y salta sobre las cartas para no caer al
+        vac\xEDo.\n\nMuevete con las teclas W, A, S y D o las flechas. Si est\xE1s
+        preparado, presiona Espacio."
       objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}

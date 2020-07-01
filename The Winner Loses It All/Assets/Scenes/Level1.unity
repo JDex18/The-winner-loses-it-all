@@ -2387,14 +2387,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
-        type: 3}
-      propertyPath: m_Text
-      value: "Toni ha llevado a su hijo al colegio, y ahora se dirige a trabajar.
-        \nLleva a Toni a trav\xE9s de la ciudad hasta su oficina. Si quieres saber
-        como llegar, presiona la tecla Q para indicar el camino.\n\nSi est\xE1s preparado,
-        presiona Espacio."
-      objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2499,6 +2491,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "Toni ha llevado a su hijo al colegio, y ahora se dirige a trabajar.
+        \n\nLleva a Toni a trav\xE9s de la ciudad hasta su oficina. Si quieres saber
+        como llegar, presiona la tecla Q para indicar el camino. Interactua con la
+        gente pulsando Espacio cerca de ellos.\n\nMuevete con las teclas W, A, S y
+        D o con las flechas. Si est\xE1s preparado, presiona Espacio."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4052b333fce7470469a68c216e46e0f9, type: 3}
@@ -5336,16 +5337,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 118ee971eb391264786f0178c96ae189, type: 2}
-    - target: {fileID: 5362272422776399495, guid: 59f8452b2947c3147a9e964462557c4b,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 785aba7f063040b43a44aa96c6c14e99, type: 2}
     - target: {fileID: 4811715212776149520, guid: 59f8452b2947c3147a9e964462557c4b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 314b42f8613ce3c4693b637fbb223339, type: 2}
+    - target: {fileID: 5362272422776399495, guid: 59f8452b2947c3147a9e964462557c4b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 785aba7f063040b43a44aa96c6c14e99, type: 2}
     - target: {fileID: 1266049988082796537, guid: 59f8452b2947c3147a9e964462557c4b,
         type: 3}
       propertyPath: m_Controller
@@ -7348,7 +7349,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736870730}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &736870733
 Camera:
   m_ObjectHideFlags: 0
@@ -13497,11 +13498,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.19673012
       objectReference: {fileID: 0}
-    - target: {fileID: -6165827872063535620, guid: 1ed1c165eaf7b1244b21a06872565a9c,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 47beb9ce2a2b9ec4fbcec88dbc3b8fef, type: 2}
     - target: {fileID: -529177695146175607, guid: 1ed1c165eaf7b1244b21a06872565a9c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -13517,6 +13513,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6854323086a576249b71aa1844302c71, type: 2}
+    - target: {fileID: -6165827872063535620, guid: 1ed1c165eaf7b1244b21a06872565a9c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 47beb9ce2a2b9ec4fbcec88dbc3b8fef, type: 2}
     m_RemovedComponents:
     - {fileID: -6057140222963153312, guid: 1ed1c165eaf7b1244b21a06872565a9c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1ed1c165eaf7b1244b21a06872565a9c, type: 3}
@@ -15713,16 +15714,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b17e104a782c7f945b03f394c3146228, type: 2}
-    - target: {fileID: 5362272422776399495, guid: 59f8452b2947c3147a9e964462557c4b,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b039481dd551b6b41b4be5ef14eacb8c, type: 2}
     - target: {fileID: 4811715212776149520, guid: 59f8452b2947c3147a9e964462557c4b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 118ee971eb391264786f0178c96ae189, type: 2}
+    - target: {fileID: 5362272422776399495, guid: 59f8452b2947c3147a9e964462557c4b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b039481dd551b6b41b4be5ef14eacb8c, type: 2}
     - target: {fileID: 1266049988082796537, guid: 59f8452b2947c3147a9e964462557c4b,
         type: 3}
       propertyPath: m_Controller
@@ -22761,6 +22762,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 1427020102271071654, guid: 3798fcf356ec7494fa152c4eadaf7147,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1427020102271071655, guid: 3798fcf356ec7494fa152c4eadaf7147,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23850,6 +23856,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!81 &8296172669478767742
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172669478767740}
+  m_Enabled: 1
 --- !u!1001 &8403657914607488851
 PrefabInstance:
   m_ObjectHideFlags: 0

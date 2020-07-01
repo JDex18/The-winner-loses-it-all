@@ -60,8 +60,16 @@ public class AudioManager : MonoBehaviour
         {
             if (s.name == name)
             {
-                s.source.Pause();
-                return;
+                if (!controller.music)
+                {
+                    return;
+                }
+
+                else
+                {
+                    s.source.Pause();
+                    return;
+                }
             }
         }
     }
@@ -72,16 +80,24 @@ public class AudioManager : MonoBehaviour
         {
             if (s.name == name)
             {
-                if (!s.source.isPlaying)
+                if (!controller.music)
                 {
-                    s.source.Play();
+                    return;
                 }
 
                 else
                 {
-                    s.source.UnPause();
-                }
-                return;
+                    if (!s.source.isPlaying)
+                    {
+                        s.source.Play();
+                    }
+
+                    else
+                    {
+                        s.source.UnPause();
+                    }
+                    return;
+                } 
             }
         }
     }

@@ -13,7 +13,7 @@ public class ObjectGood : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        transform.rotation = Quaternion.Euler(new Vector3(90, 0, 0));
+        transform.rotation = Quaternion.Euler(new Vector3(113.83f, 270f, 89.99999f));
 
         minigameManager = GameObject.Find("GameManager").GetComponent<Minigame4Manager>();
     }

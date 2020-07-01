@@ -22,6 +22,9 @@ public class Object : MonoBehaviour
             case 1:
                 transform.rotation = Quaternion.Euler(new Vector3(-35.663f, 2.367f, -37.463f));
                 break;
+            case 2:
+                transform.rotation = Quaternion.Euler(new Vector3(90, 180, 0));
+                break;
         }
         
 

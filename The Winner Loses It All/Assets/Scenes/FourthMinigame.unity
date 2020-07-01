@@ -2640,15 +2640,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
-        type: 3}
-      propertyPath: m_Text
-      value: "Toni est\xE1 tratando de evitar que termine apostando en la m\xE1quina
-        del bar.\n\nEvita que los objetos malos lleguen al suelo, o la barra de vida
-        bajar\xE1. Los objetos buenos recuperan vida. Para ganar, impide que la barra
-        de vida llegue a cero antes de que el tiempo acabe.\n\nSi est\xE1s preparado,
-        pulsa Espacio."
-      objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2753,6 +2744,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "Toni est\xE1 tratando de evitar apostar en la m\xE1quina del bar.\n\nEvita
+        quelos objetos lleguen al suelo, o la barra de vida bajar\xE1. Las fotos familiares
+        recuperan vida. Para ganar, impide que la barra de vida llegue a cero antes
+        de que el tiempo acabe.\n\nUsa las teclas A y D o las flechas para moverte.
+        Si est\xE1s preparado, pulsa Espacio."
       objectReference: {fileID: 0}
     - target: {fileID: 6981106703766965276, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
@@ -2892,7 +2892,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1828932297
 MonoBehaviour:
@@ -2908,10 +2908,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnDelay: 0
   objects:
-  - {fileID: 374944911536826312, guid: cb67cb100c193da4da6636ec2e6d0aef, type: 3}
+  - {fileID: 2373276713037338585, guid: 556f7c4c15bac584b9557bc0d76798be, type: 3}
   - {fileID: 115970060837156932, guid: a7cc9621bc8b00f4c8a6d5ea2626fa4a, type: 3}
+  - {fileID: 7125065806659567766, guid: 779fbb5a27ff45e49a0f905e90ac587a, type: 3}
+  - {fileID: 7910831925334790579, guid: b7e993a3fd015a34d92ada0894a229d2, type: 3}
+  - {fileID: 1466432579177906574, guid: 8aac5ab7027d52e4fa16d09d713a1882, type: 3}
+  - {fileID: 374944911536826312, guid: cb67cb100c193da4da6636ec2e6d0aef, type: 3}
   objectsGood:
-  - {fileID: 4226943380200392277, guid: 3ec6270f34d203e4ea459147db29e797, type: 3}
+  - {fileID: 5935824573831797446, guid: 7498e97c16e51db4080b17703ffd6280, type: 3}
   spawnPoints:
   - {fileID: 755003476}
   - {fileID: 322790042}
@@ -2998,7 +3002,7 @@ PrefabInstance:
     - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 623890916670557730, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
         type: 3}
@@ -3055,6 +3059,11 @@ PrefabInstance:
         type: 3}
       propertyPath: sounds.Array.data[1].volume
       value: 0.146
+      objectReference: {fileID: 0}
+    - target: {fileID: 623890916670557741, guid: a7ae99e8a9c9c334dbaed767ee23caa7,
+        type: 3}
+      propertyPath: sounds.Array.data[6].pitch
+      value: 0.86
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7ae99e8a9c9c334dbaed767ee23caa7, type: 3}

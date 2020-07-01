@@ -16,3 +16,4 @@ MonoBehaviour:
   enPaso: 0
   soundEffects: 1
   music: 1
+  levelPlayed: 00000000000000000000000000000000

@@ -919,7 +919,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c3df3e049e4f9694f9c2b103400c78bb, type: 2}
+  - {fileID: 2100000, guid: 74fd820eabc7d774798a116a3b528ef1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -983,9 +983,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "Toni est\xE1 en un aprieto, y tiene que inventarse algo para que no
-        le pillen. Encuentra las parejas antes de que termine el tiempo, o tu barra
-        de recaida subir\xE1 y tendr\xE1s que volver a empezar.\n\nSupera las tres
-        rondas para ganar\n\nSi est\xE1s preparado, presiona Espacio."
+        le pillen. Encuentra las parejas antes de que termine el tiempo, o tendr\xE1s
+        que volver a empezar.\n\nSupera las tres rondas para ganar. Si te equivocas,
+        tendr\xE1s que esperar tres segundos para continuar.\n\nPulsa sobre una carta
+        para girarla. Si est\xE1s preparado, presiona Espacio."
       objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}

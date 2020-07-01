@@ -133,6 +133,7 @@ public class PlayerMovementMinigame4 : MonoBehaviour
         start = transform.position;
         end = start + target;
         timer = 0f;
+        FindObjectOfType<AudioManager>().Play("Salto");
     }
 
     private void OnTriggerEnter(Collider other)
