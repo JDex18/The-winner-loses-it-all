@@ -1802,7 +1802,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: e31cf441d78f6c1e3ce77b1279cae503
+      Hash: 00821b077d966a7a502d04b196d0f41a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraFollow

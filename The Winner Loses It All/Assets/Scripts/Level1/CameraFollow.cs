@@ -24,6 +24,11 @@ public class CameraFollow : MonoBehaviour
     public static bool cambio2;
     public static bool cambio3;
 
+    public GameObject trigger1;
+    public GameObject trigger2;
+    public GameObject trigger3;
+
+
 
     [Range(0.01f, 1.0f)]
     public float smoothFactor;//para suavizar el movimiento de la cámara
@@ -92,6 +97,7 @@ public class CameraFollow : MonoBehaviour
                 currentView = views[0];
                 cameraTransition = true;
                 cameraOffset = cameraOffset2;
+                trigger1.transform.position = new Vector3(-2.3f, 1.1f, -77.59f);
                 return;
             }
 
@@ -100,6 +106,7 @@ public class CameraFollow : MonoBehaviour
                 currentView = views[1];
                 cameraTransition = true;
                 cameraOffset = cameraOffset1;
+                trigger1.transform.position = new Vector3(-3f, 1.1f, -76.8f);
                 return;
             }
         }
@@ -113,6 +120,7 @@ public class CameraFollow : MonoBehaviour
                 currentView = views[2];
                 cameraTransition = true;
                 cameraOffset = cameraOffset2;
+                trigger2.transform.position = new Vector3(57.2f, 1.1f, -125.28f);
                 return;
             }
 
@@ -121,6 +129,7 @@ public class CameraFollow : MonoBehaviour
                 currentView = views[3];
                 cameraTransition = true;
                 cameraOffset = cameraOffset1;
+                trigger2.transform.position = new Vector3(57.2f, 1.1f, -126.3f);
                 return;
             }
         }
@@ -134,6 +143,7 @@ public class CameraFollow : MonoBehaviour
                 currentView = views[4];
                 cameraTransition = true;
                 cameraOffset = cameraOffset2;
+                trigger3.transform.position = new Vector3(-46.97f, 1.1f, 8.05f);
                 return;
             }
 
@@ -142,6 +152,7 @@ public class CameraFollow : MonoBehaviour
                 currentView = views[5];
                 cameraTransition = true;
                 cameraOffset = cameraOffset3;
+                trigger3.transform.position = new Vector3(-45.86f, 1.1f, 8.05f);
                 return;
             }
         }

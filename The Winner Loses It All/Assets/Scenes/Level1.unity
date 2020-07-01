@@ -4825,6 +4825,9 @@ MonoBehaviour:
   - {fileID: 231745386}
   - {fileID: 2136227516}
   cameraTransition: 0
+  trigger1: {fileID: 0}
+  trigger2: {fileID: 0}
+  trigger3: {fileID: 0}
   smoothFactor: 0.048
 --- !u!81 &515305451
 AudioListener:
@@ -7418,6 +7421,9 @@ MonoBehaviour:
   - {fileID: 2092181864}
   - {fileID: 895063212}
   cameraTransition: 0
+  trigger1: {fileID: 1915565943}
+  trigger2: {fileID: 616076934}
+  trigger3: {fileID: 815241478}
   smoothFactor: 0.048
 --- !u!1001 &738595728
 PrefabInstance:
@@ -13498,6 +13504,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.19673012
       objectReference: {fileID: 0}
+    - target: {fileID: -6165827872063535620, guid: 1ed1c165eaf7b1244b21a06872565a9c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 47beb9ce2a2b9ec4fbcec88dbc3b8fef, type: 2}
     - target: {fileID: -529177695146175607, guid: 1ed1c165eaf7b1244b21a06872565a9c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -13513,11 +13524,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6854323086a576249b71aa1844302c71, type: 2}
-    - target: {fileID: -6165827872063535620, guid: 1ed1c165eaf7b1244b21a06872565a9c,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 47beb9ce2a2b9ec4fbcec88dbc3b8fef, type: 2}
     m_RemovedComponents:
     - {fileID: -6057140222963153312, guid: 1ed1c165eaf7b1244b21a06872565a9c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1ed1c165eaf7b1244b21a06872565a9c, type: 3}
@@ -21625,6 +21631,9 @@ MonoBehaviour:
   - {fileID: 2092181864}
   - {fileID: 895063212}
   cameraTransition: 0
+  trigger1: {fileID: 0}
+  trigger2: {fileID: 0}
+  trigger3: {fileID: 0}
   smoothFactor: 0.048
 --- !u!81 &2082034839
 AudioListener:
