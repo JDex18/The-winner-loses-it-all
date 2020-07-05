@@ -80,6 +80,7 @@ public class CanvasMinigame4 : MonoBehaviour
                 PlayerMovementMinigame4.play = false;
                 playerMovement.resetPlayer();
                 minigameManager.resetTime();
+                pauseButtonsController.deactivatePauseMenu();
             }
         }
 

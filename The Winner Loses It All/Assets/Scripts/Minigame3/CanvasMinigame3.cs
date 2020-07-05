@@ -82,6 +82,7 @@ public class CanvasMinigame3 : MonoBehaviour
                     playing = false;
                     instructionsText.text = "Si estás preparado, presiona Espacio";
                     instructions.SetActive(true);
+                    pauseButtonsController.deactivatePauseMenu();
                 }
 
                 if (good)
