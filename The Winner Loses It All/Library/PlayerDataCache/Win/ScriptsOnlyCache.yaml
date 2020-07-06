@@ -1868,4 +1868,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Intro.unity
   - Assets/Scenes/LastLevel.unity
   playerPath: C:/Users/jorge/OneDrive/Documentos/GitHub/The-winner-loses-it-all/The
-    Winner Loses It All/APK/The Winner Loses It All.exe
+    Winner Loses It All/BuildWindows/The Winner Loses It All.exe

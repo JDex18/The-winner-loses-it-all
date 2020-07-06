@@ -15,7 +15,7 @@ public class Dialogos : MonoBehaviour
     string[] personaje7 = new string[13];
     string[] personaje8 = new string[4];
     string[] personaje9 = new string[10];
-    string[] personaje10 = new string[12];//este personaje es del nivel 4, así que al añadir el resto de diálogos acúerdate de mover este al final
+    string[] personaje10 = new string[12];
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +63,7 @@ public class Dialogos : MonoBehaviour
     void rellenarPersonaje2()
     {
         personaje2[0] = "Anciano: Parece que han abierto un nuevo casino por aquí cerca";
-        personaje2[1] = "Anciano: Es genial, así podré acrcarme cuando recoja a mi nieto del colegio y divertirme un poco";
+        personaje2[1] = "Anciano: Es genial, así podré acercarme cuando recoja a mi nieto del colegio y divertirme un poco";
         personaje2[2] = "Anciano: Sé que en teoría no dejan entrar a menores, pero bueno, suelen hacer la vista gorda";
         personaje2[3] = "Anciano: Así que por qué no iban a hacerla con mi nieto? Solo será un rato";
     }

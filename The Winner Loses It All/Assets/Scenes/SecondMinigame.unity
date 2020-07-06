@@ -1265,8 +1265,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 7.3, y: -1.4}
+  m_SizeDelta: {x: 125.1, y: 96.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1827914172
 Animator:
@@ -1464,6 +1464,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: backToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427020101709839644, guid: 3798fcf356ec7494fa152c4eadaf7147,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.299988
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427020101709839644, guid: 3798fcf356ec7494fa152c4eadaf7147,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7.200012
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3798fcf356ec7494fa152c4eadaf7147, type: 3}

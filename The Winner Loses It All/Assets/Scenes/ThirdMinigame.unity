@@ -1098,6 +1098,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: backToMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 1427020101709839644, guid: 3798fcf356ec7494fa152c4eadaf7147,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.299988
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427020101709839644, guid: 3798fcf356ec7494fa152c4eadaf7147,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7.200012
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3798fcf356ec7494fa152c4eadaf7147, type: 3}
 --- !u!224 &435936908 stripped
@@ -1325,6 +1335,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "Iker est\xE1 intentando convencer a Toni para apostar. Repite los patrones
+        de colores. Cada patr\xF3n tiene seis colores.\n\nSupera las cuatro rondas
+        para ganar. Si fallas, tendr\xE1s que repetir la ronda.\n\nPulsa sobre un
+        bot\xF3n para elegirlo. Si est\xE1s preparado, presiona Espacio."
+      objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1429,14 +1447,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
-        type: 3}
-      propertyPath: m_Text
-      value: "Iker est\xE1 intentando convencer a Toni para apostar. Repite los patrones
-        de colores. Cada patr\xF3n tiene seis colores.\n\nSupera las cuatro rondas
-        para ganar. Si fallas, tendr\xE1s que repetir la ronda.\n\nPulsa sobre un
-        bot\xF3n para elegirlo. Si est\xE1s preparado, presiona Espacio."
       objectReference: {fileID: 0}
     - target: {fileID: 6981106703766965276, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
@@ -3292,8 +3302,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -7.2, y: 1.4}
+  m_SizeDelta: {x: 96, y: 72.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1368320682
 Animator:

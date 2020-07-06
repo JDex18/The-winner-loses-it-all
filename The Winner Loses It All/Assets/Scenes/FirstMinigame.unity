@@ -1525,11 +1525,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 1427020102271071654, guid: 3798fcf356ec7494fa152c4eadaf7147,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1427020102271071655, guid: 3798fcf356ec7494fa152c4eadaf7147,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1640,20 +1635,20 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 728521185}
-    - target: {fileID: 4629411636067676707, guid: 3798fcf356ec7494fa152c4eadaf7147,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: resume
-      objectReference: {fileID: 0}
     - target: {fileID: 4629411634478539536, guid: 3798fcf356ec7494fa152c4eadaf7147,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 728521185}
-    - target: {fileID: 4629411634478539536, guid: 3798fcf356ec7494fa152c4eadaf7147,
+    - target: {fileID: 1427020101709839644, guid: 3798fcf356ec7494fa152c4eadaf7147,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: backToMenu
+      propertyPath: m_AnchoredPosition.x
+      value: -4.299988
+      objectReference: {fileID: 0}
+    - target: {fileID: 1427020101709839644, guid: 3798fcf356ec7494fa152c4eadaf7147,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7.200012
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3798fcf356ec7494fa152c4eadaf7147, type: 3}
@@ -2566,8 +2561,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -3, y: 2.899994}
+  m_SizeDelta: {x: 168.8, y: 104.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &431677884
 PrefabInstance:
@@ -8298,6 +8293,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7329320609375527882, guid: 85876892dfc75d34382cba4704c06615,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2054d7147ca026e4e850dd83df3f602b, type: 2}
     - target: {fileID: 5640280572446654396, guid: 85876892dfc75d34382cba4704c06615,
         type: 3}
       propertyPath: cam
@@ -8309,11 +8309,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ba146a987a4b05043a76f92d659900f6,
         type: 2}
-    - target: {fileID: 7329320609375527882, guid: 85876892dfc75d34382cba4704c06615,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 2054d7147ca026e4e850dd83df3f602b, type: 2}
     m_RemovedComponents:
     - {fileID: 5640280572446654394, guid: 85876892dfc75d34382cba4704c06615, type: 3}
     - {fileID: 5640280572446654396, guid: 85876892dfc75d34382cba4704c06615, type: 3}
@@ -10267,6 +10262,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instrucciones
       objectReference: {fileID: 0}
+    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
+        type: 3}
+      propertyPath: m_Text
+      value: "Llega hasta cada una de las cuatro metas y gana la partida.\n\nPero
+        cuidado, esquiva los obst\xE1culos y salta sobre las cartas para no caer al
+        vac\xEDo.\n\nMuevete con las teclas W, A, S y D o las flechas. Si est\xE1s
+        preparado, presiona Espacio."
+      objectReference: {fileID: 0}
     - target: {fileID: 6981106704431404096, guid: 4052b333fce7470469a68c216e46e0f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10371,14 +10374,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981106703766965277, guid: 4052b333fce7470469a68c216e46e0f9,
-        type: 3}
-      propertyPath: m_Text
-      value: "Llega hasta cada una de las cuatro metas y gana la partida.\n\nPero
-        cuidado, esquiva los obst\xE1culos y salta sobre las cartas para no caer al
-        vac\xEDo.\n\nMuevete con las teclas W, A, S y D o las flechas. Si est\xE1s
-        preparado, presiona Espacio."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4052b333fce7470469a68c216e46e0f9, type: 3}
